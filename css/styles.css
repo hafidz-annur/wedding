@@ -1,0 +1,186 @@
+.content {
+    height: 2350px;
+    width: 96%;
+    background: rgba(209, 206, 28, 0.11);
+    padding: 0 10px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-mask-image: url("../img/grit.png");
+    mask-image: url("../img/grit.png");
+    
+}
+
+.section1 {
+    background: white;
+    margin: -10px;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 40px;
+}
+
+.section3 {
+  padding-top : 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.header1 {
+    margin-bottom: -55px;
+    z-index: 1;
+    width: 58%;
+}
+
+.header2 {
+    margin-top: -25px;
+    width: 58%;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Damion', cursive;
+    font-size: 5em;
+    letter-spacing: 10px;
+    z-index: -2;
+    color: #ddb867;
+    text-shadow: 2px 2px #cac4c4;
+}
+
+h3 {
+    font-family: 'Damion', cursive;
+    font-size: 3em;
+    color: #dfbf7a;
+    text-shadow: 1px 1px #f5f1f1;
+    line-height: 1.5em;
+}
+
+h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    color: #ddb867;
+    text-shadow: 1px 1px #cac4c4;
+    line-height: 1.5em;
+}
+
+h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    color: #686359;
+    /* text-shadow: 1px 1px #cac4c4; */
+    line-height: 1em;
+    margin-top: -5px;
+}
+
+.doa {
+    width: 20%;
+}
+
+.line{
+    width: 40%;
+    border: 1px solid #797979;
+    left:0;
+}
+
+.card{
+    border-radius: 30px;
+    background: #ec060605 ;
+    border:0px;
+    box-shadow: 0 2px 4px 0 rgba(71, 42, 2, 0.2), 0 3px 10px 0 rgba(112, 74, 3, 0.19);
+}
+
+.arts1{
+    position: absolute;
+    left:-25px;
+    top:-25px;
+    opacity: 0.8;
+}
+
+.arts2{
+    position: absolute;
+    right:-35px;
+    bottom:-35px;
+    opacity: 0.8;
+}
+
+.arts3{
+    position: absolute;
+    right:-20px;
+    bottom:-20%;
+    opacity: 0.8;
+    transform: rotate(180deg);
+}
+
+.arts4{
+    position: absolute;
+    opacity: 0.1;
+    left: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .header1 {
+        margin-bottom: -20px;
+        z-index: 1;
+        width: 85%;
+    }
+
+    .header2 {
+        margin-top: -10px;
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    .doa {
+        width: 40%;
+    }
+
+    .arts1{
+        position: absolute;
+        left:-17px;
+        top:-17px;
+        opacity: 0.5;
+    }
+
+    .arts2{
+        position: absolute;
+        right:-17px;
+        bottom:-17px;
+        opacity: 0.5;
+    }
+
+    .arts3{
+        position: absolute;
+        right:-20px;
+        bottom:-25px;
+        opacity: 0.8;
+        transform: rotate(180deg);
+    }
+
+    .arts4{
+        position: absolute;
+        opacity: 0.1;
+        left: 20%;
+        margin-top: 80px;
+    }
+    
+}
