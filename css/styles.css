@@ -123,6 +123,11 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
+    .content {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
     .header1 {
         margin-bottom: -20px;
         z-index: 1;
@@ -134,12 +139,16 @@ h6 {
         width: 85%;
     }
 
+    p {
+        font-size: 12px;
+    }
+
     h1 {
         font-size: 2em;
     }
 
     h3 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     h5 {
