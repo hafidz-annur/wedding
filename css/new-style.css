@@ -122,6 +122,18 @@ h6 {
     left: 20%;
 }
 
+.audio-button {
+    position: fixed;
+    z-index: 99999;
+    top:50%;
+    right:2%
+}
+
+.btn-circle {
+    border-radius: 50px;
+    padding-right: 10px;
+}
+
 @media only screen and (max-width: 600px) {
     .section1{
         padding-top: 50%;

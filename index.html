@@ -14,14 +14,20 @@
     <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/new-style.css">
 
 </head>
 
 <body>
+    <div class="audio-button">
+        <button onclick="playAudio()" type="button" class="btn btn-primary btn-circle" id="playButton"><i
+                class="fa fa-play"></i></button>
+        <button onclick="stopAudio()" type="button" class="btn btn-danger btn-circle" id="stopButton"><i
+                class="fa fa-pause"></i></button>
+    </div>
+
     <audio id="playAudio">
-        <source src="sound/takkan-terganti.ogg" type="audio/ogg">
-        <source src="sound/takkan-terganti.mp3" type="audio/mpeg">
+        <source src="sound/cinta-terakhir.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -73,14 +79,14 @@
             </h5>
             <img src="img/love.png" width="60%" class="arts4">
             <h3 class="pt-3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-easing="ease-in-out">Hafidz Annur Fanany</h3>
+                data-aos-easing="ease-in-out">Hafidz Annur Fanany, S.Kom</h3>
             <h6 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
                 data-aos-easing="ease-in-out">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </h6>
             <h5 class="pt-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
                 data-aos-easing="ease-in-out">Dengan</h5>
             <h3 class="pt-3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-easing="ease-in-out">Ismi Nur Aini</h3>
+                data-aos-easing="ease-in-out">Ismi Nur Aini, S.Kom</h3>
             <h6 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
                 data-aos-easing="ease-in-out">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </h6>
@@ -174,14 +180,23 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-    $('#myModal').modal('show');
+    // $('#myModal').modal('show');
 </script>
 <script>
     var x = document.getElementById("playAudio");
-
+    var y = document.getElementById("playButton");
+    var z = document.getElementById("stopButton");
+    z.style.display = "none";
     function playAudio() {
         x.play();
-        $('#myModal').modal('hide');
+        y.style.display = "none";
+        z.style.display = "block";
+    }
+
+    function stopAudio() {
+        x.pause();
+        y.style.display = "block";
+        z.style.display = "none";
     }
 </script>
 
