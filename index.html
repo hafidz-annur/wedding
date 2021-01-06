@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
-         user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hafidz & Ismi Wedding</title>
     <link rel="icon" href="img/rings.ico" type="image/gif" sizes="16x16">
@@ -15,16 +14,18 @@
     <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style-3.css">
+    <link rel="stylesheet" type="text/css" href="css/style-4.css">
+    <style>
 
+    </style>
 </head>
 
 <body>
     <div class="audio-button">
         <button onclick="playAudio()" type="button" class="btn btn-primary btn-circle shadow" id="playButton"><i
-                class="fa fa-play"></i></button>
+                class="fa fa-volume-mute"></i></button>
         <button onclick="stopAudio()" type="button" class="btn btn-danger btn-circle shadow" id="stopButton"><i
-                class="fa fa-pause"></i></button>
+                class="fa fa-music"></i></button>
     </div>
 
     <audio id="playAudio">
@@ -32,34 +33,69 @@
         Your browser does not support the audio element.
     </audio>
 
-    <div class="content text-center">
-        <div class="section1 pt-5">
-            <img src="img/rose.png" width="15%" class="arts1" style="opacity:0.4;">
-            <img src="img/rose.png" width="15%" class="arts3" style="opacity:0.4;">
-            <img src="img/header1.png" class="header1" data-aos="zoom-in-down" data-aos-offset="0" data-aos-delay="50"
-                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
-                data-aos-anchor-placement="top-center">
-            <!-- <h1 class="title font-weight-bold">Hafidz <i class="fas fa-circle" style="font-size:15px;"></i> Ismi
-                    </h1> -->
-            <h1 class="title font-weight-bold" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="1200"
-                data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
-                style="z-index: 1000;">
+    <div class="fixed-button">
+        <div class="row text-white">
+            <div class="col ml-3 p-2 text-center">
+                <i class="fa fa-home fa-2x"></i><br>
+                Home
+            </div>
+            <div class="col p-2 text-center">
+                <i class="fa fa-ring fa-2x"></i><br>
+                Couple
+            </div>
+            <div class="col p-2 text-center">
+                <i class="fa fa-calendar-alt fa-2x"></i><br>
+                Events
+            </div>
+            <div class="col mr-3 p-2 text-center">
+                <i class="fa fa-map-pin fa-2x"></i><br>
+                Maps
+            </div>
+        </div>
+    </div>
+
+    <!-- home -->
+    <div class="container text-center mt-2">
+        <img src="img/line-1.png" class="top-line">
+        <div class="list-card text-center">
+            <img src="img/love.png" class="home-bg">
+            <h2 class="mt-5">The Wedding</h2>
+            <h1 class="d-lg-block d-none">
                 Hafidz & Ismi
             </h1>
-            <img src="img/header2.png" class="header2" data-aos="zoom-in-down" data-aos-offset="200"
-                data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <h1 class="d-block d-lg-none">
+                Hafidz<br>&<br>Ismi<br>
+            </h1>
+            <div class="row justify-content-center mt-5 mb-5">
+                <div class="col-md-4 col-10 mt-2">
+                    <div class="card shadow" style="border-radius: 8px;">
+                        <div class="p-2">
+                            Kepada Yth.<br>Bp/Ibu/Sdr/i :
+                            <h5 class="mt-4" id="name"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section2 pt-5">
-            <div class="row part-1 flex-wrap-reverse">
+        <img src="img/line-1.png" class="bottom-line">
+    </div>
+    <div class="text-center">
+        <img src="img/line-2.png" class="in-line">
+    </div>
+    <!-- couple -->
+    <div class="container text-center mt-2">
+        <img src="img/line-1.png" class="top-line">
+        <div class="list-card text-center">
+            <div class="row flex-wrap-reverse">
                 <div class="col-md-8 my-auto">
                     <img src="img/bismillah.png" class="doa" data-aos="zoom-in" data-aos-offset="200"
                         data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h5 class="mt-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
                         data-aos-duration="1000" data-aos-easing="ease-in-out">
-                        Assalamu'alaikum Warahmatullahi Wabarakatuh<br>
+                        Assalamu'alaikum Warahmatullahi Wabarakatuh<br><br>
                         Dengan Rahmat dan Ridlo Allah SWT.<br>
-                        Kami mengharap dengan hormat atas kehadiran Bapak/Ibu/Saudara/i pada
-                        Pernikahan Putra-Putri kami
+                        Kami mengharap dengan hormat atas kehadiran<br>
+                        Bapak/Ibu/Saudara/i pada prnikahan Putra-Putri kami
                     </h5>
                 </div>
                 <div class="col-md-4 my-auto text-center">
@@ -72,12 +108,9 @@
                 </div>
             </div>
 
-            <div class="row part-2">
-                <img src="img/love.png" width="60%" class="arts4">
+            <div class="row mb-5">
+                <!-- <img src="img/love.png" width="60%" class="home-bg"> -->
                 <div class="col-md-4 my-auto">
-                    <!-- <img src="img/bg-photo.png" class="bg-photo" style="opacity: 0.5;" data-aos="fade-left"
-                        data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"> -->
                     <img src="img/wed-2.png" class="photo-1" style="opacity: 1;" data-aos="fade-right"
                         data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000"
                         data-aos-easing="ease-in-out">
@@ -90,94 +123,20 @@
                     </h6>
                     <h5 class="pt-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
                         data-aos-duration="1000" data-aos-easing="ease-in-out">Dengan</h5>
-                    <h3 class="pt-3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                    <h3 class="pt-3" data-aos="fade-up" data-aos-offset="100" data-aos-delay="100"
                         data-aos-duration="1000" data-aos-easing="ease-in-out">Ismi Nur Aini, S.Kom</h3>
-                    <h6 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
+                    <h6 data-aos="fade-up" data-aos-offset="100" data-aos-delay="300" data-aos-duration="1000"
                         data-aos-easing="ease-in-out">Putri Bapak Supardi & Ibu Waris
                     </h6>
                 </div>
             </div>
-
-            <h5 class="pt-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-easing="ease-in-out">Yang Insya Allah akan dilaksanakan,
-            </h5>
-            <div class="row pt-4">
-                <div class="col-md-5 mx-auto">
-                    <div class="card mb-2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
-                        data-aos-duration="1200" data-aos-easing="ease-in-out">
-                        <div class="card-body">
-                            <img src="img/rose.png" width="20%" class="arts1">
-                            <table width="100%">
-                                <tr>
-                                    <td width="30%" class="text-right align-middle">
-                                        <img src="img/ring.png" width="75%" style="opacity:0.6;">
-                                    </td>
-                                    <td class="text-left pl-3">
-                                        <h3 class="text-muted" style="font-family: 'Damion', cursive;">
-                                            Akad </h3>
-                                        <div class="line" style="margin-top:-10px; margin-bottom: 10px;"></div>
-                                        <h6>Pukul 00:00 WIB</h6>
-                                        <h6>Selasa, 00 Maret 1998</h6>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                            <img src="img/flow.png" width="30%" class="arts2">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-5 mb-2 mx-auto">
-                    <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="600"
-                        data-aos-duration="1200" data-aos-easing="ease-in-out">
-                        <div class="card-body">
-                            <img src="img/rose.png" width="20%" class="arts1">
-                            <table width="100%">
-                                <tr>
-                                    <td width="30%" class="text-right align-middle">
-                                        <img src="img/celeberate.png" width="85%" style="opacity:0.6;">
-                                    </td>
-                                    <td class="text-left pl-3">
-                                        <h3 class="text-muted" style="font-family: 'Damion', cursive;">
-                                            Resepsi </h3>
-                                        <div class="line" style="margin-top:-10px; margin-bottom: 10px;"></div>
-                                        <h6>Pukul 00:00 WIB</h6>
-                                        <h6>Selasa, 00 Maret 1998</h6>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur
-                                        </p>
-                                </tr>
-                            </table>
-                            <img src="img/flow.png" width="30%" class="arts2">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row pt-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-easing="ease-in-out">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7910.119653409935!2d110.8494796726463!3d-7.568456842769498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16552309b4a5%3A0x5027a76e356c7c0!2sPucangsawit%2C%20Jebres%2C%20Surakarta%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1609229923444!5m2!1sen!2sid"
-                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-            </div>
         </div>
-
-        <div class="section3">
-            <h5 class="mt-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-easing="ease-in-out">
-                Merupakan suatu kehormatan dan kebahagiaan bagi
-                kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk
-                memberikan do’a restu kepada putra-putri kami.<br>
-                Atas kehadiran serta do’a restunya
-                Kami ucapkan terima kasih.<br><br>
-
-                Wassalamu’alaikum Warahmatullahi Wabarakatuh
-            </h5>
-        </div>
+        <img src="img/line-1.png" class="bottom-line">
+    </div>
+    <div class="text-center">
+        <img src="img/line-2.png" class="in-line">
     </div>
 </body>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -208,6 +167,20 @@
         y.style.display = "block";
         z.style.display = "none";
     }
+</script>
+<script>
+    function GetURLParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
+            }
+        }
+    }
+    var name = GetURLParameter('n').split("%20");
+    document.getElementById("name").innerHTML = name.replace(/,/g, " ");
 </script>
 
 </html>
