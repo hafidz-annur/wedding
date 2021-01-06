@@ -1,5 +1,11 @@
-        html {
-        scroll-behavior: smooth;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        a:hover, a:focus {
+            color: black !important;
         }
 
         body {

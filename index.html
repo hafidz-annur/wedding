@@ -35,21 +35,29 @@
 
     <div class="fixed-button">
         <div class="row text-white">
-            <div class="col ml-3 p-2 text-center" style="cursor:pointer" onclick="window.location='#home'">
-                <i class="fa fa-home"></i><br>
-                <small>Home</small>
+            <div class="col ml-3 p-2 text-center">
+                <a href="#home" class="text-decoration-none text-white">
+                    <i class="fa fa-home"></i><br>
+                    <small>Home</small>
+                </a>
             </div>
-            <div class="col p-2 text-center" style="cursor:pointer" onclick="window.location='#couple'">
-                <i class="fa fa-ring"></i><br>
-                <small>Couple</small>
+            <div class="col p-2 text-center">
+                <a href="#couple" class="text-decoration-none text-white">
+                    <i class="fa fa-ring"></i><br>
+                    <small>Couple</small>
+                </a>
             </div>
-            <div class="col p-2 text-center" style="cursor:pointer" onclick="window.location='#events'">
-                <i class="fa fa-calendar-alt"></i><br>
-                <small>Events</small>
+            <div class="col p-2 text-center">
+                <a href="#events" class="text-decoration-none text-white">
+                    <i class="fa fa-calendar-alt"></i><br>
+                    <small>Events</small>
+                </a>
             </div>
-            <div class="col mr-3 p-2 text-center" style="cursor:pointer" onclick="window.location='#maps'">
-                <i class="fa fa-map-pin"></i><br>
-                <small>Maps</small>
+            <div class="col mr-3 p-2 text-center">
+                <a href="#events" class="text-decoration-none text-white">
+                    <i class="fa fa-map-pin"></i><br>
+                    <small>Maps</small>
+                </a>
             </div>
         </div>
     </div>
@@ -137,9 +145,8 @@
         <img src="img/line-2.png" class="in-line">
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -181,6 +188,32 @@
     }
     var name = GetURLParameter('n').split("-");
     document.getElementById("name").innerHTML = name.replace(/,/g, " ");
+</script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
 </script>
 
 </html>
