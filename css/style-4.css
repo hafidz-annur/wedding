@@ -1,3 +1,7 @@
+        html {
+        scroll-behavior: smooth;
+        }
+
         body {
             background: rgba(209, 206, 28, 0.11);
             -webkit-mask-image: url("../img/grit.png");
@@ -10,6 +14,7 @@
             background-position: center;
             background-size: 50%;
             background-repeat: no-repeat;
+            padding: 20px;
         }
 
         .audio-button {
@@ -49,6 +54,21 @@
             color: #dfbf7a;
             text-shadow: 1px 1px #f5f1f1;
             line-height: 1.5em;
+        }
+
+        h5 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.3em;
+            color: #ddb867;
+            line-height: 1.8em;
+        }
+
+        h6 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px !important;
+            color: #686359;
+            line-height: 1em;
+            margin-top: -5px;
         }
 
         .top-line {
@@ -125,6 +145,18 @@
 
             h3 {
                 font-size: 1.7em;
+            }
+
+            h5 {
+                font-size: 14px;
+            }
+
+            h6 {
+                font-size: 12px;
+            }
+
+            .list-card {
+                padding: 15px;
             }
 
             .top-line, .bottom-line {
