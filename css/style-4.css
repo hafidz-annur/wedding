@@ -104,6 +104,10 @@
             width: 120%;
         }
 
+        .fixed-button {
+            display: none;
+        }
+
         @media only screen and (max-width: 600px) {
             body {
                 width: 100%;
@@ -162,6 +166,7 @@
                 bottom: 0;
                 background-color: gray;
                 z-index: 999;
+                display: block;
             }
 
             .fixed-button .col:hover {
