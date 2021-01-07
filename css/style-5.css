@@ -227,4 +227,18 @@
                 color: rgb(43, 43, 43);
             }
 
+            .arts1{
+                position: absolute;
+                left:-25px;
+                top:-25px;
+                opacity: 0.8;
+            }
+
+            .arts2{
+                position: absolute;
+                right:-25px;
+                bottom:-25px;
+                opacity: 0.8;
+            }
+
         }
