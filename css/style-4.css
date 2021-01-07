@@ -9,7 +9,7 @@
         }
 
         body {
-            background: rgba(209, 206, 28, 0.11);
+            background: url(../img/pattern.jpg);
             -webkit-mask-image: url("../img/grit.png");
             mask-image: url("../img/grit.png");
         }
@@ -17,8 +17,9 @@
         .list-card {
             border: 0.2em solid rgba(153, 133, 19, 0.349);
             border-radius: 20px;
+            background: url("../img/bg-card.jpg");
             background-position: center;
-            background-size: 50%;
+            background-size: cover;
             background-repeat: no-repeat;
             padding: 20px;
         }
@@ -65,14 +66,14 @@
         h5 {
             font-family: 'Quicksand', sans-serif;
             font-size: 1.3em;
-            color: #ddb867;
+            color: #726343;
             line-height: 1.8em;
         }
 
         h6 {
             font-family: 'Quicksand', sans-serif;
             font-size: 18px !important;
-            color: #686359;
+            color: #726343;
             line-height: 1em;
             margin-top: -5px;
         }
@@ -202,13 +203,13 @@
                 width: 100%;
                 position: fixed;
                 bottom: 0;
-                background-color: gray;
+                background-color: #6d5c21;
                 z-index: 999;
                 display: block;
             }
 
             .fixed-button .col:hover {
-                background-color: honeydew;
+                background-color: rgb(180, 185, 136);
                 color: rgb(43, 43, 43);
             }
 
