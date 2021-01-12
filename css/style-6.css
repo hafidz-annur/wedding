@@ -218,8 +218,8 @@
                 position: fixed;
                 bottom: 0;
                 background-color: #6d5c21;
-                z-index: 999;
-                display: block;
+                z-index: 9999;
+                display: inline-block;
             }
 
             .fixed-button .col:hover {
