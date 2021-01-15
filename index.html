@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style-6.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -222,11 +219,29 @@
     <div class="container text-center mt-2 " id="maps">
         <img src="img/line-1.png" class="top-line">
         <div class="list-card text-center">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7910.119653409935!2d110.8494796726463!3d-7.568456842769498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16552309b4a5%3A0x5027a76e356c7c0!2sPucangsawit%2C%20Jebres%2C%20Surakarta%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1610442566126!5m2!1sen!2sid"
-                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
-                data-aos-easing="ease-in-out"></iframe>
+            <div class="row">
+                <div class="col-md-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7910.119653409935!2d110.8494796726463!3d-7.568456842769498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16552309b4a5%3A0x5027a76e356c7c0!2sPucangsawit%2C%20Jebres%2C%20Surakarta%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1610442566126!5m2!1sen!2sid"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out"></iframe>
+                </div>
+                <div class="col-md-4 text-left mt-2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <form action="" onsubmit="consoleData()" method="post">
+                        <div class="form-group text-left">
+                            <label>Nama Tamu Undangan :</label>
+                            <input type="text" name="nama_tamu" id="namaTamu" class="form-control" required>
+                        </div>
+                        <div class="form-group text-left">
+                            <label>Ucapan :</label>
+                            <textarea name="ucapan" id="ucapan" rows="10" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Ucapan</button>
+                    </form>
+                </div>
+            </div>
             <div class="row justify-content-center mt-4 mb-4">
                 <div class="col-8">
                     <h5 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
@@ -255,6 +270,62 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDuR9w9hyA_O8wITMUB0Azx9K-p7gg6vdc",
+        authDomain: "wedding-9d89a.firebaseapp.com",
+        projectId: "wedding-9d89a",
+        storageBucket: "wedding-9d89a.appspot.com",
+        messagingSenderId: "68200932798",
+        appId: "1:68200932798:web:bb123776e4ee1d5a88c5ef",
+        measurementId: "G-SV5Z9XMN9K"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const db = firebase.database()
+    const blogRef = db.ref('tamu').on('value', handleSuccess, handleError)
+
+    function handleSuccess(items) {
+        // console.log(items.val())
+    }
+
+    function handleError(erro) {
+        console.log(error)
+    }
+
+    function writeUserData(userId, nama, ucapan, date) {
+        db.ref('tamu/' + userId).set({
+            nama: nama,
+            tgl_kirim: date,
+            ucapan: ucapan
+        });
+    }
+
+    function consoleData() {
+        let date = new Date();
+        let y = date.getFullYear();
+        let m = date.getMonth() + 1;
+        let d = date.getDate();
+        let newDate = d + "/" + m + "/" + y
+
+        let n = $('#namaTamu').val()
+        let u = $('#ucapan').val()
+        let id = Math.floor(Math.random() * 100000);
+        writeUserData(id, n, u, newDate)
+    }
+</script>
 <script>
     AOS.init();
     // $('#myModal').modal('show');
@@ -289,6 +360,7 @@
     }
     var name = GetURLParameter('n').split("-");
     document.getElementById("name").innerHTML = name.replace(/,/g, " ");
+    $('#namaTamu').val(name.replace(/,/g, " "))
 </script>
 <script>
     $(document).ready(function () {
