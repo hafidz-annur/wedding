@@ -310,6 +310,12 @@
             nama: nama,
             tgl_kirim: date,
             ucapan: ucapan
+        }, (error) => {
+            if (error) {
+                alert("Error! Silahkan masukan ucapan lagi!")
+            } else {
+                alert("Berhasil! Ucapan anda berhasil dikirim.")
+            }
         });
     }
 
