@@ -258,6 +258,26 @@
     <div class="container" style="height: 100px;">
 
     </div>
+
+    <div class="modal fade" id="alertMsg" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="alert">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js">
 </script>
@@ -304,17 +324,28 @@
     }
 
     function writeUserData(userId, nama, ucapan, date) {
-        db.ref('tamu/' + userId).set({
-            nama: nama,
-            tgl_kirim: date,
-            ucapan: ucapan
-        }, (error) => {
-            if (error) {
-                alert("Error! Silahkan masukan ucapan lagi!")
-            } else {
-                alert("Berhasil! Ucapan anda berhasil dikirim.")
-            }
-        });
+        if (ucapan == "") {
+            $("#alertTitle").html("Konfirmasi Ucapan")
+            $("#alert").html("Silahkan masukan ucapan terlebih dahulu.")
+            $("#alertMsg").modal("show")
+            // alert("Silahkan masukan ucapan terlebih dahulu.")
+        } else {
+            db.ref('tamu/' + userId).set({
+                nama: nama,
+                tgl_kirim: date,
+                ucapan: ucapan
+            }, (error) => {
+                if (error) {
+                    $("#alertTitle").html("Konfirmasi Ucapan")
+                    $("#alert").html("Ucapan anda gagal dikirim.")
+                    $("#alertMsg").modal("show")
+                } else {
+                    $("#alertTitle").html("Konfirmasi Ucapan")
+                    $("#alert").html("Ucapan anda berhasil dikirim.")
+                    $("#alertMsg").modal("show")
+                }
+            });
+        }
     }
 
     $("#btn-submit").click(function () {
