@@ -228,7 +228,7 @@
                         data-aos-duration="1000" data-aos-easing="ease-in-out"></iframe>
                 </div>
                 <div class="col-md-4 text-left mt-2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
-                    data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" id="form-ucapan">
                     <div class="form-group text-left">
                         <label>Nama Tamu Undangan :</label>
                         <input type="text" name="nama_tamu" id="namaTamu" class="form-control" required>
@@ -261,7 +261,7 @@
 
     <div class="modal fade" id="alertMsg" data-backdrop="static" tabindex="-1" role="dialog"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="alertTitle">Modal title</h5>
@@ -343,6 +343,7 @@
                     $("#alertTitle").html("Konfirmasi Ucapan")
                     $("#alert").html("Ucapan anda berhasil dikirim.")
                     $("#alertMsg").modal("show")
+                    $("#form-ucapan").hide()
                 }
             });
         }
