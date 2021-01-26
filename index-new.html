@@ -11,8 +11,21 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <title>Wedding</title>
     <style>
+        body {
+            font-family: 'Handlee', cursive;
+            letter-spacing: 2px;
+            line-height: 1.6 !important;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+
         .container-fluid {
             padding: 0 !important;
         }
@@ -65,14 +78,49 @@
         }
 
         #doa {
-            height: 660px;
-            width: 100%;
-            background: #B8E2E8;
+            height: 100vh;
+            background: url("bg-flower/bg-couple.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 2;
+            padding: 30px 200px;
+        }
+
+        #doa .bg {
             position: absolute;
+        }
+
+        .doa-title {
+            width: 25%;
+        }
+
+        .couple1 {
+            margin-top: -150px;
+            width: 300px;
             z-index: 2;
         }
 
+        #doa h3 {
+            font-size: 35px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #doa h5 {
+            font-family: 'Parisienne', cursive;
+        }
+
+        #event {
+            height: 100vh;
+        }
+
+
+
         @media only screen and (max-width: 800px) {
+            p {
+                font-size: 18px;
+            }
+
             #home {
                 height: 100vh;
                 background: url("bg-flower/mobile/1-bg.png");
@@ -116,9 +164,39 @@
                 font-weight: 100;
             }
 
-
             #doa {
-                margin-top: -20px;
+                height: 150vh;
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 2;
+                padding: 10px;
+            }
+
+            .doa-title {
+                width: 55%;
+            }
+
+            .couple1 {
+                margin-top: -150px;
+                text-align: center;
+                z-index: -2;
+                left: 15%;
+            }
+
+            .couple-title {
+                margin-top: 250px;
+            }
+
+            #doa h3 {
+                font-size: 30px;
+                font-family: 'Dancing Script', cursive;
+            }
+
+            #doa h5 {
+                font-size: 20px;
+                font-family: 'Parisienne', cursive;
             }
         }
     </style>
@@ -150,10 +228,32 @@
 
         </div>
         <div id="doa">
-
-        </div>
-        <div id="couple">
-
+            <div class="row pt-5">
+                <div class="col text-center">
+                    <img src="img/bismillah.png" class="doa-title">
+                    <p class="m-5 text-center">
+                        Assalamu'alaikum Warahmatullahi Wabarakatuh<br><br>
+                        Dengan Rahmat dan Ridlo Allah SWT.
+                        Kami mengharap dengan hormat atas kehadiran
+                        Bapak/Ibu/Saudara/i pada pernikahan Putra-Putri kami
+                    </p>
+                </div>
+            </div>
+            <div class="row flex-wrap-reverse">
+                <div class="col-md-8 pt-4 text-center couple-title">
+                    <h3>Hafidz Annur Fanany, S.Kom</h3>
+                    <h6>Putra Bapak Agus Supriyanto, S.Pd & Ibu
+                        Hartini
+                    </h6>
+                    <h5 class="pt-3 pb-3">Dengan</h5>
+                    <h3>Ismi Nur Aini, S.Kom</h3>
+                    <h6>Putri Bapak Supardi & Ibu Waris
+                    </h6>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/wed-1.png" class="bg couple1">
+                </div>
+            </div>
         </div>
         <div id="event">
 
