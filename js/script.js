@@ -19,6 +19,6 @@ $(window).scroll(function () {
     })
 
     $(".couple1").css({
-        'transform': 'translate(0px, ' + wScroll / 30 + '%)'
+        'transform': 'translate(-' + wScroll / 45 + 'px, ' + wScroll / 35 + '%)'
     })
 })
