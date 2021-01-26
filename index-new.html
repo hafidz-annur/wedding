@@ -32,6 +32,14 @@
             position: absolute;
         }
 
+        .bg-desktop {
+            display: block;
+        }
+
+        .bg-mobile {
+            display: none;
+        }
+
         .home-col {
             margin-top: 15%;
         }
@@ -66,32 +74,45 @@
 
         @media only screen and (max-width: 800px) {
             #home {
-                height: 250px;
+                height: 100vh;
+                background: url("bg-flower/mobile/1-bg.png");
+            }
+
+            #home .bg {
                 width: 100%;
-                background: url("bg-flower/1-bg.png");
-                background-attachment: fixed;
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: 100%;
+                position: absolute;
+                background-size: cover;
+            }
+
+            .bg-desktop {
+                display: none;
+            }
+
+            .bg-mobile {
+                display: block;
+            }
+
+            .home-col {
+                margin-top: 70%;
             }
 
             .home-title {
                 font-family: 'Parisienne', cursive;
                 font-weight: 500;
                 text-shadow: 1px 1px gray;
-                font-size: 35px
+                font-size: 45px
             }
 
             .home-couple {
                 font-family: 'Parisienne', cursive;
                 font-weight: 500;
                 text-shadow: 1px 1px gray;
-                font-size: 20px;
+                font-size: 30px;
             }
 
             .home-date {
                 margin-top: 30px;
-                font-size: 10px;
+                font-size: 15px;
                 font-weight: 100;
             }
 
@@ -113,10 +134,19 @@
                     <h5 class="home-date">- 00 January 0000 -</h5>
                 </div>
             </div>
-            <img src="bg-flower/5-bg.png" class="bg" id="bg1">
-            <img src="bg-flower/4-bg.png" class="bg" id="bg2">
-            <img src="bg-flower/3-bg.png" class="bg" id="bg3">
-            <img src="bg-flower/2-bg.png" class="bg" id="bg4">
+            <div class="bg-desktop">
+                <img src="bg-flower/5-bg.png" class="bg bg1">
+                <img src="bg-flower/4-bg.png" class="bg bg2">
+                <img src="bg-flower/3-bg.png" class="bg bg3">
+                <img src="bg-flower/2-bg.png" class="bg bg4">
+            </div>
+
+            <div class="bg-mobile">
+                <img src="bg-flower/mobile/5-bg.png" class="bg bg1">
+                <img src=" bg-flower/mobile/4-bg.png" class="bg bg2">
+                <img src="bg-flower/mobile/3-bg.png" class="bg bg3">
+                <img src="bg-flower/mobile/2-bg.png" class="bg bg4">
+            </div>
 
         </div>
         <div id="doa">
