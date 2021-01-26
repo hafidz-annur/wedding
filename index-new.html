@@ -9,7 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <title>Wedding</title>
     <style>
         .container-fluid {
@@ -31,6 +32,29 @@
             position: absolute;
         }
 
+        .home-col {
+            margin-top: 15%;
+        }
+
+        .home-title {
+            font-family: 'Parisienne', cursive;
+            font-weight: 500;
+            text-shadow: 1px 1px gray;
+            font-size: 75px
+        }
+
+        .home-couple {
+            font-family: 'Parisienne', cursive;
+            font-weight: 500;
+            text-shadow: 1px 1px gray;
+            font-size: 50px;
+        }
+
+        .home-date {
+            margin-top: 80px;
+            font-size: 20px;
+            font-weight: 100;
+        }
 
         #doa {
             height: 660px;
@@ -51,6 +75,26 @@
                 background-size: 100%;
             }
 
+            .home-title {
+                font-family: 'Parisienne', cursive;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                font-size: 35px
+            }
+
+            .home-couple {
+                font-family: 'Parisienne', cursive;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                font-size: 20px;
+            }
+
+            .home-date {
+                margin-top: 30px;
+                font-size: 10px;
+                font-weight: 100;
+            }
+
 
             #doa {
                 margin-top: -20px;
@@ -62,6 +106,13 @@
 <body>
     <div class="container-fluid">
         <div id="home">
+            <div class="row">
+                <div class="col position-absolute text-center home-col" style="z-index: 2;" id="title">
+                    <h1 class="home-title">The Wedding of</h1>
+                    <h1 class="home-couple">Hafidz & Ismi</h1>
+                    <h5 class="home-date">- 00 January 0000 -</h5>
+                </div>
+            </div>
             <img src="bg-flower/5-bg.png" class="bg" id="bg1">
             <img src="bg-flower/4-bg.png" class="bg" id="bg2">
             <img src="bg-flower/3-bg.png" class="bg" id="bg3">
