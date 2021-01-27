@@ -20,7 +20,7 @@ $(window).scroll(function () {
     })
 
     $(".couple1").css({
-        'transform': 'translate(-' + wScroll / 45 + 'px, ' + '0px)'
+        'transform': 'translate(-' + wScroll / 10 + 'px, ' + '0px)'
     })
 
     $("#couple2").css({
