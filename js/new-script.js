@@ -1,5 +1,6 @@
 $(window).scroll(function () {
     var wScroll = $(this).scrollTop()
+    console.log(wScroll)
 
     $(".bg1").css({
         'transform': 'translate(0px, ' + wScroll / 20 + '%)',
@@ -21,4 +22,10 @@ $(window).scroll(function () {
     $(".couple1").css({
         'transform': 'translate(-' + wScroll / 45 + 'px, ' + '0px)'
     })
+
+    $("#couple2").css({
+        'transform': 'translate(' + wScroll / 10 + 'px, ' + '0px)'
+    })
+
+
 })
