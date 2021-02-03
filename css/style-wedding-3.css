@@ -1,6 +1,8 @@
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
         body {
-            font-family: 'Handlee', cursive;
-            letter-spacing: 1.5px;
+            font-family: 'Nunito', sans-serif;
+            letter-spacing: 1.1px;
             line-height: 1.6 !important;
         }
 
@@ -8,6 +10,10 @@
             font-size: 18px;
         }
 
+        .h1-title, h3 {
+            font-family: 'Parisienne', cursive;
+            text-shadow: 1px 1px #918d8d;
+        }
 
         .container-fluid {
             padding: 0 !important;
@@ -60,17 +66,18 @@
             font-weight: 100;
         }
 
-        #doa {
+        #couple {
             height: 100vh;
-            background: url("../bg-flower/bg-couple.png");
+            /* background: url("../bg-flower/bg-couple.png"); */
+            background-color: #ffffff;
             background-size: 100%;
             background-repeat: no-repeat;
             position: relative;
-            z-index: 2;
-            padding: 0px 200px;
+            z-index: 99;
+            padding: 0px 100px;
         }
 
-        #doa .bg {
+        #couple .bg {
             position: absolute;
         }
 
@@ -79,29 +86,41 @@
         }
 
         .couple1 {
-            margin-top: -110px;
+            margin-top: -30px;
             width: 300px;
             z-index: 2;
         }
 
-        #doa h3 {
+        #couple h3 {
             font-size: 35px;
             font-family: 'Dancing Script', cursive;
         }
 
-        #doa h5 {
+        #couple h5 {
             font-family: 'Parisienne', cursive;
         }
 
         #event {
             position: relative;
             height:auto;
-            background: url("../bg-flower/bg-event.png");
+            background: url("../bg-flower/bg-couple.png");
             background-attachment: fixed;
             background-size: cover;
-            padding : 70px 200px;
+            background-repeat: no-repeat;
+            padding : 100px 200px 70px 200px;
         }
 
+        .card-1 {
+            border-radius:15px 75px; 
+            background: rgb(250,250,250);
+            background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(237,237,237,1) 84%)
+        }
+
+        .card-2 {
+            border-radius:75px 15px; 
+            background: rgb(250,250,250);
+            background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(237,237,237,1) 84%)
+        }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
             p {
@@ -155,7 +174,7 @@
                 font-weight: 100;
             }
 
-            #doa {
+            #couple {
                 height: 100%;
                 background-size: cover;
                 background-position: top right;
@@ -181,12 +200,12 @@
                 margin-top: 250px;
             }
 
-            #doa h3 {
+            #couple h3 {
                 font-size: 25px;
                 font-family: 'Dancing Script', cursive;
             }
 
-            #doa h5 {
+            #couple h5 {
                 font-size: 20px;
                 font-family: 'Parisienne', cursive;
             }
@@ -199,12 +218,12 @@
 
         .custom-shape-divider-bottom-1611758739 {
             position: absolute;
-            bottom: 0;
+            bottom: -70px;
             left: 0;
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            transform: rotate(180deg);
+            transform: rotate(360deg);
         }
 
         .custom-shape-divider-bottom-1611758739 svg {
@@ -218,10 +237,34 @@
             fill: #ffffff;
         }
 
+        .custom-shape-divider-top-1612355560 {
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-top-1612355560 svg {
+            position: relative;
+            display: block;
+            width: calc(198% + 1.3px);
+            height: 72px;
+        }
+
+        .custom-shape-divider-top-1612355560 .shape-fill {
+            fill: #ffffff;
+        }
+
         /** For mobile devices **/
         @media (max-width: 767px) {
             .custom-shape-divider-bottom-1611758739 svg {
                 width: calc(139% + 1.3px);
                 height: 53px;
+            }
+
+            .custom-shape-divider-bottom-1611758739 {
+                bottom: -52px;
             }
         }
