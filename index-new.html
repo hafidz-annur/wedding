@@ -17,7 +17,7 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style-wedding-4.css">
+    <link rel="stylesheet" href="css/style-wedding-5.css">
     <style>
         h2 {
             font-family: 'Dancing Script', cursive;
@@ -36,10 +36,23 @@
         }
 
         .couple2 {
-            margin-top: -220px;
+            margin-top: -280px;
             left: 0px;
             width: 400px;
             z-index: 2;
+        }
+
+        .countdown {
+            position: absolute;
+            bottom: 15%;
+        }
+
+        .time {
+            font-weight: 600;
+            background: white;
+            padding: 10px 0 8px 0;
+            margin: 17px 5px;
+            border-radius: 10px 10px 0 0;
         }
 
         #doa {
@@ -99,6 +112,11 @@
                 margin-left: -25%;
                 width: 250px;
                 z-index: 2;
+            }
+
+            .countdown {
+                position: relative;
+                margin-top: 5px;
             }
 
             .mobile-center {
@@ -205,6 +223,28 @@
                 <h1 class="h1-title text-center mb-5">Events</h1>
                 <div class="col-md-6 align-self-center">
                     <img src="img/wed-1.png" class="bg couple2" id="couple2">
+                    <div class="countdown">
+                        <table class="table">
+                            <tr class="text-center">
+                                <td>
+                                    <p class="time" id="day"></p>
+                                    <button class="btn btn-primary" style="margin-top: -20px;">Days</button>
+                                </td>
+                                <td>
+                                    <p class="time" id="hour"></p>
+                                    <button class="btn btn-primary" style="margin-top: -20px;">Hours</button>
+                                </td>
+                                <td>
+                                    <p class="time" id="minute"></p>
+                                    <button class="btn btn-primary" style="margin-top: -20px;">Minutes</button>
+                                </td>
+                                <td>
+                                    <p class="time" id="second"></p>
+                                    <button class="btn btn-primary" style="margin-top: -20px;">Seconds</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4 shadow card-1">
@@ -294,14 +334,17 @@
             </div>
         </div>
         <div id="doa">
-            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم
+            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ
+            بَيْنَكُم
             مَّوَدَّةً
             وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
             <br>
             <br>
-            “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri,
+            “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu
+            sendiri,
             supaya kamu
-            cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya
+            cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang.
+            Sesungguhnya
             pada yang
             demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir”
             <br><br>
@@ -367,11 +410,41 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jul 25, 2021 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("day").innerHTML = days;
+            document.getElementById("hour").innerHTML = hours;
+            document.getElementById("minute").innerHTML = minutes;
+            document.getElementById("second").innerHTML = seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("day").innerHTML = "00";
+                document.getElementById("hour").innerHTML = "00";
+                document.getElementById("minute").innerHTML = "00";
+                document.getElementById("second").innerHTML = "00";
+            }
+        }, 1000);
+    </script>
     <script>
         $(document).ready(function () {
             $('#bukaUndangan').modal("show")
