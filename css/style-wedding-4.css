@@ -10,9 +10,15 @@
             font-size: 18px;
         }
 
-        .h1-title, h3 {
+        .h1-title {
             font-family: 'Parisienne', cursive;
             text-shadow: 1px 1px #918d8d;
+        }
+
+        h3 {
+            font-family: 'Parisienne', cursive;
+            text-shadow: 1px 1px #918d8d;
+            color: #64B5C7
         }
 
         .container-fluid {
@@ -27,6 +33,8 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100%;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png");
         }
 
         #home .bg {
@@ -112,14 +120,18 @@
 
         .card-1 {
             border-radius:15px 75px; 
-            background: rgb(250,250,250);
-            background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(237,237,237,1) 84%)
+            background: rgb(255, 255, 255);
+            border:0px;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png");
         }
 
         .card-2 {
             border-radius:75px 15px; 
-            background: rgb(250,250,250);
-            background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(237,237,237,1) 84%)
+            background: rgb(255, 255, 255);
+            border:0px;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png");
         }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
