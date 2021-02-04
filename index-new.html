@@ -19,6 +19,18 @@
     <title>Wedding</title>
     <link rel="stylesheet" href="css/style-wedding-4.css">
     <style>
+        h2 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .modal {
+            background: url("bg-flower/bg-couple.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-mask-image: url("img/grit.png");
+            mask-image: url("img/grit.png");
+        }
+
         #event .bg {
             position: absolute;
         }
@@ -48,6 +60,21 @@
             position: relative;
             z-index: 99;
             padding: 100px 100px;
+        }
+
+        .audio-button {
+            position: fixed;
+            z-index: 99999;
+            top: 2%;
+            right: 2%
+        }
+
+        .btn-circle {
+            border-radius: 50px;
+            padding-right: 12px;
+            padding-left: 12px;
+            background: rgb(218, 205, 136);
+            border: 1px gold;
         }
 
 
@@ -98,7 +125,20 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <!-- musik -->
+    <audio id="playAudio">
+        <source src="sound/marry-your-daughter.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="audio-button">
+        <button onclick="playAudio()" type="button" class="btn btn-primary btn-circle shadow" id="playButton"><i
+                class="fa fa-volume-mute"></i></button>
+        <button onclick="stopAudio()" type="button" class="btn btn-danger btn-circle shadow" id="stopButton"><i
+                class="fa fa-volume-up"></i></button>
+    </div>
+
+    <div class="container-fluid" id="content">
         <div id="home">
             <div class="row">
                 <div class="col position-absolute text-center home-col" style="z-index: 2;" id="title">
@@ -302,23 +342,23 @@
     <div class="modal" id="bukaUndangan">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content p-3 text-center">
-                <h3>The Wedding of</h3>
+                <h2>The Wedding of</h2>
                 <h2>Hafidz & Ismi</h2>
-                <div class="card">
+                <div class="card mt-4">
                     <div class="card-body">
                         Kepada Yth: Bp/Ibu/Sdr/i :
                         <h5>Nama Tamu</h5>
                     </div>
                 </div>
-                <button class="btn btn-dark btn-sm mt-2" data-dismiss="modal">Buka Undangan</button>
+                <button class="btn btn-dark btn-sm mt-2" data-dismiss="modal" id="bukaTombol">
+                    Buka Undangan
+                </button>
             </div>
         </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/new-script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -335,10 +375,36 @@
     <script>
         $(document).ready(function () {
             $('#bukaUndangan').modal("show")
+            $("#maps-akad").show();
+            $("#maps-resepsi").hide();
+            $("#content").hide();
         });
 
-        $("#maps-akad").show();
-        $("#maps-resepsi").hide();
+        $("#bukaTombol").click(function () {
+            $("#content").fadeIn(3000);
+            var x = document.getElementById("playAudio");
+            var y = document.getElementById("playButton");
+            var z = document.getElementById("stopButton");
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        });
+
+        var x = document.getElementById("playAudio");
+        var y = document.getElementById("playButton");
+        var z = document.getElementById("stopButton");
+        z.style.display = "none";
+        function playAudio() {
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+
+        function stopAudio() {
+            x.pause();
+            y.style.display = "block";
+            z.style.display = "none";
+        }
 
         $("#akad").click(function () {
             $("#maps-akad").show();
