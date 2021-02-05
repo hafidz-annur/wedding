@@ -96,6 +96,35 @@
             border: 1px gold;
         }
 
+        #ucapans {
+            height: 100vh;
+            z-index: 99;
+            padding: 100px 100px;
+        }
+
+        .list-ucapan {
+            padding: 10px 20px;
+            height: 430px;
+            border-radius: 5px;
+            overflow-x: hidden;
+            border: 1px solid #dedede;
+        }
+
+        .list-ucapan h6 {
+            font-size: 14px;
+            margin-bottom: -5px !important;
+        }
+
+        .list-ucapan small {
+            font-size: 11px;
+            color: rgb(139, 139, 253);
+        }
+
+        .list-ucapan p {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
             #event {
@@ -143,7 +172,17 @@
                 padding: 50px 10px 100px 10px;
             }
 
+            #ucapans {
+                height: 100%;
+                padding: 10px 10px;
+            }
 
+            .list-ucapan {
+                margin-top: 20px;
+                height: 430px;
+                overflow-x: hidden;
+                border: 0px;
+            }
         }
     </style>
 </head>
@@ -389,6 +428,132 @@
                     tabindex="0"></iframe>
             </div>
         </div>
+        <div id="ucapans">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="form-group text-left">
+                                <small>Nama Tamu Undangan :</small>
+                                <input type="text" name="nama_tamu" id="namaTamu" class="form-control" required>
+                            </div>
+                            <div class="form-group text-left mt-2">
+                                <small>Ucapan :</small>
+                                <textarea name="ucapan" id="ucapan" rows="10" class="form-control" required></textarea>
+                            </div>
+                            <div class="form-group float-right mt-2">
+                                <button id="btn-submit" class="btn btn-primary btn-sm mt-2">Kirim
+                                    Ucapan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 list-ucapan shadow">
+                    <div class="list">
+                        <div class="row no-gutters">
+                            <div class="col-md-1 text-center">
+                                <i class="far fa-user-circle fa-2x"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <h6>Full Name</h6>
+                                <small>01-01-2021</small>
+                                <hr style="margin:0px;">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestias dolorum
+                                    dolor cumque ullam at sunt obcaecati impedit reiciendis facilis perspiciatis iusto,
+                                    architecto exercitationem voluptas placeat quibusdam aperiam deleniti voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="row no-gutters">
+                            <div class="col-md-1 text-center">
+                                <i class="far fa-user-circle fa-2x"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <h6>Full Name</h6>
+                                <small>01-01-2021</small>
+                                <hr style="margin:0px;">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestias dolorum
+                                    dolor cumque ullam at sunt obcaecati impedit reiciendis facilis perspiciatis iusto,
+                                    architecto exercitationem voluptas placeat quibusdam aperiam deleniti voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="row no-gutters">
+                            <div class="col-md-1 text-center">
+                                <i class="far fa-user-circle fa-2x"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <h6>Full Name</h6>
+                                <small>01-01-2021</small>
+                                <hr style="margin:0px;">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestias dolorum
+                                    dolor cumque ullam at sunt obcaecati impedit reiciendis facilis perspiciatis iusto,
+                                    architecto exercitationem voluptas placeat quibusdam aperiam deleniti voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="row no-gutters">
+                            <div class="col-md-1 text-center">
+                                <i class="far fa-user-circle fa-2x"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <h6>Full Name</h6>
+                                <small>01-01-2021</small>
+                                <hr style="margin:0px;">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestias dolorum
+                                    dolor cumque ullam at sunt obcaecati impedit reiciendis facilis perspiciatis iusto,
+                                    architecto exercitationem voluptas placeat quibusdam aperiam deleniti voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="row no-gutters">
+                            <div class="col-md-1 text-center">
+                                <i class="far fa-user-circle fa-2x"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <h6>Full Name</h6>
+                                <small>01-01-2021</small>
+                                <hr style="margin:0px;">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestias dolorum
+                                    dolor cumque ullam at sunt obcaecati impedit reiciendis facilis perspiciatis iusto,
+                                    architecto exercitationem voluptas placeat quibusdam aperiam deleniti voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="row no-gutters">
+                            <div class="col-md-1 text-center">
+                                <i class="far fa-user-circle fa-2x"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <h6>Full Name</h6>
+                                <small>01-01-2021</small>
+                                <hr style="margin:0px;">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestias dolorum
+                                    dolor cumque ullam at sunt obcaecati impedit reiciendis facilis perspiciatis iusto,
+                                    architecto exercitationem voluptas placeat quibusdam aperiam deleniti voluptatum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Buka Undangan Modal -->
@@ -457,10 +622,10 @@
     </script>
     <script>
         $(document).ready(function () {
-            $('#bukaUndangan').modal("show")
+            // $('#bukaUndangan').modal("show")
             $("#maps-akad").show();
             $("#maps-resepsi").hide();
-            $("#content").hide();
+            // $("#content").hide();
         });
 
         $("#bukaTombol").click(function () {
