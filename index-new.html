@@ -100,6 +100,7 @@
             height: 100vh;
             z-index: 99;
             padding: 100px 100px;
+            position: relative;
         }
 
         .list-ucapan {
@@ -127,6 +128,10 @@
 
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
+            body {
+                max-width: 414px;
+            }
+
             #event {
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -174,7 +179,13 @@
 
             #ucapans {
                 height: 100%;
-                padding: 10px 10px;
+                background-size: cover;
+                background-position: top right;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 2;
+                padding: 10px;
+                padding-bottom: 50px;
             }
 
             .list-ucapan {
@@ -448,7 +459,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 list-ucapan shadow">
+                <div class="col-md-8 list-ucapan">
                     <div class="list">
                         <div class="row no-gutters">
                             <div class="col-md-1 text-center">
@@ -622,10 +633,10 @@
     </script>
     <script>
         $(document).ready(function () {
-            // $('#bukaUndangan').modal("show")
+            $('#bukaUndangan').modal("show")
             $("#maps-akad").show();
             $("#maps-resepsi").hide();
-            // $("#content").hide();
+            $("#content").hide();
         });
 
         $("#bukaTombol").click(function () {
