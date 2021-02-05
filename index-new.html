@@ -27,8 +27,14 @@
             background: url("bg-flower/bg-couple.png");
             background-size: cover;
             background-repeat: no-repeat;
-            /* -webkit-mask-image: url("img/grit.png");
-            mask-image: url("img/grit.png"); */
+        }
+
+        .modal-content {
+            background: url("img/bg-card-2.jpg") !important;
+            background-size: cover;
+            background-position: center;
+            -webkit-mask-image: url("img/grit.png");
+            mask-image: url("img/grit.png");
         }
 
         #event .bg {
@@ -226,21 +232,25 @@
                     <div class="countdown">
                         <table class="table">
                             <tr class="text-center">
-                                <td>
+                                <td width="25%">
                                     <p class="time" id="day"></p>
-                                    <button class="btn btn-primary" style="margin-top: -20px;">Days</button>
+                                    <button class="btn btn-primary"
+                                        style="margin-top: -20px; width: 100%;">Days</button>
                                 </td>
-                                <td>
+                                <td width="25%">
                                     <p class="time" id="hour"></p>
-                                    <button class="btn btn-primary" style="margin-top: -20px;">Hours</button>
+                                    <button class="btn btn-primary"
+                                        style="margin-top: -20px; width: 100%;">Hours</button>
                                 </td>
-                                <td>
+                                <td width="25%">
                                     <p class="time" id="minute"></p>
-                                    <button class="btn btn-primary" style="margin-top: -20px;">Minutes</button>
+                                    <button class="btn btn-primary"
+                                        style="margin-top: -20px; width: 100%;">Minutes</button>
                                 </td>
-                                <td>
+                                <td width="25%">
                                     <p class="time" id="second"></p>
-                                    <button class="btn btn-primary" style="margin-top: -20px;">Seconds</button>
+                                    <button class="btn btn-primary"
+                                        style="margin-top: -20px; width: 100%;">Seconds</button>
                                 </td>
                             </tr>
                         </table>
@@ -385,7 +395,7 @@
     <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content p-3 text-center">
-                <h2>The Wedding of</h2>
+                <h2 class="mt-4">The Wedding of</h2>
                 <h2>Hafidz & Ismi</h2>
                 <div class="card mt-4">
                     <div class="card-body">
@@ -393,7 +403,7 @@
                         <h5>Nama Tamu</h5>
                     </div>
                 </div>
-                <button class="btn btn-dark btn-sm mt-2" data-dismiss="modal" id="bukaTombol">
+                <button class="btn btn-dark btn-sm mt-2 mb-4" data-dismiss="modal" id="bukaTombol">
                     Buka Undangan
                 </button>
             </div>
@@ -480,13 +490,13 @@
         }
 
         $("#akad").click(function () {
-            $("#maps-akad").show();
+            $("#maps-akad").fadeIn("slow");
             $("#maps-resepsi").hide();
         });
 
         $("#resepsi").click(function () {
             $("#maps-akad").hide();
-            $("#maps-resepsi").show();
+            $("#maps-resepsi").fadeIn("slow");
         });
     </script>
 </body>
