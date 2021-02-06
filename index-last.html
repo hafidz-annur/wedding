@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hafidz & Ismi Wedding</title>
+    <link rel="icon" href="img/rings.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trochut&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-wedding.css">
+</head>
+
+<body>
+    <div class="audio-button">
+        <button onclick="playAudio()" type="button" class="btn btn-primary btn-circle shadow" id="playButton"><i
+                class="fa fa-volume-mute"></i></button>
+        <button onclick="stopAudio()" type="button" class="btn btn-danger btn-circle shadow" id="stopButton"><i
+                class="fa fa-music"></i></button>
+    </div>
+
+    <audio id="playAudio">
+        <source src="sound/marry-your-daughter.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="fixed-button">
+        <div class="row text-white">
+            <div class="col ml-3 p-2 text-center">
+                <a href="#home" class="text-decoration-none text-white">
+                    <i class="fa fa-home"></i><br>
+                    <small>Home</small>
+                </a>
+            </div>
+            <div class="col p-2 text-center">
+                <a href="#couple" class="text-decoration-none text-white">
+                    <i class="fa fa-ring"></i><br>
+                    <small>Couple</small>
+                </a>
+            </div>
+            <div class="col p-2 text-center">
+                <a href="#events" class="text-decoration-none text-white">
+                    <i class="fa fa-calendar-alt"></i><br>
+                    <small>Events</small>
+                </a>
+            </div>
+            <div class="col mr-3 p-2 text-center">
+                <a href="#maps" class="text-decoration-none text-white">
+                    <i class="fa fa-map-pin"></i><br>
+                    <small>Maps</small>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- home -->
+    <div class="container text-center mt-2" id="home">
+        <img src="img/line-1.png" class="top-line">
+        <div class="list-card text-center">
+            <img src="img/love.png" class="home-bg">
+            <h2 class="mt-5" data-aos="fade-up" data-aos-offset="100" data-aos-delay="200" data-aos-duration="1200"
+                data-aos-easing="ease-in-out">The Wedding</h2>
+            <h1 class="d-lg-block d-none" data-aos="fade-up" data-aos-offset="100" data-aos-delay="700"
+                data-aos-duration="1200" data-aos-easing="ease-in-out">
+                Hafidz & Ismi
+            </h1>
+            <h1 class="d-block d-lg-none" data-aos="fade-up" data-aos-offset="100" data-aos-delay="1200"
+                data-aos-duration="1200" data-aos-easing="ease-in-out">
+                Hafidz<br>&<br>Ismi<br>
+            </h1>
+            <div class="row justify-content-center mt-5 mb-5">
+                <div class="col-md-4 col-10 mt-2">
+                    <div class="card shadow" style="border-radius: 8px;" data-aos="fade-up" data-aos-offset="100"
+                        data-aos-delay="1200" data-aos-duration="1200" data-aos-easing="ease-in-out">
+                        <div class="pt-4 pb-2">
+                            <h6>Kepada Yth.<br>Bp/Ibu/Sdr/i :</h6>
+                            <h5 class="mt-4" id="name"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/line-1.png" class="bottom-line">
+    </div>
+    <div class="text-center">
+        <img src="img/line-2.png" class="in-line">
+    </div>
+    <!-- couple -->
+    <div class="container text-center mt-2" id="couple">
+        <img src="img/line-1.png" class="top-line">
+        <div class="list-card text-center">
+            <div class="row flex-wrap-reverse">
+                <div class="col-md-8 my-auto">
+                    <img src="img/bismillah.png" class="doa" data-aos="zoom-in" data-aos-offset="200"
+                        data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <h5 class="mt-4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        Assalamu'alaikum Warahmatullahi Wabarakatuh<br><br>
+                        Dengan Rahmat dan Ridlo Allah SWT.
+                        Kami mengharap dengan hormat atas kehadiran
+                        Bapak/Ibu/Saudara/i pada pernikahan Putra-Putri kami
+                    </h5>
+                </div>
+                <div class="col-md-4 my-auto text-center">
+                    <img src="img/bg-photo.png" class="bg-photo" style="opacity: 0.9;" data-aos="fade-right"
+                        data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
+                    <img src="img/wed-1.png" class="photo" style="opacity: 1;" data-aos="fade-left"
+                        data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <!-- <img src="img/love.png" width="60%" class="home-bg"> -->
+                <div class="col-md-4 my-auto">
+                    <img src="img/wed-2.png" class="photo-1" style="opacity: 1;" data-aos="fade-right"
+                        data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
+                </div>
+                <div class="col-md-8 my-auto">
+                    <h3 class="pt-3" data-aos="fade-up" data-aos-offset="100" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out">Hafidz Annur Fanany, S.Kom</h3>
+                    <h6 data-aos="fade-up" data-aos="fade-up" data-aos-offset="100" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out">Putra Bapak Agus Supriyanto, S.Pd & Ibu
+                        Hartini
+                    </h6>
+                    <h5 class="pt-4" data-aos="fade-up" data-aos-offset="100" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out">Dengan</h5>
+                    <h3 class="pt-3" data-aos="fade-up" data-aos-offset="100" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out">Ismi Nur Aini, S.Kom</h3>
+                    <h6 data-aos="fade-up" data-aos="fade-up" data-aos-offset="100" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out">Putri Bapak Supardi & Ibu Waris
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <img src="img/line-1.png" class="bottom-line">
+    </div>
+    <div class="text-center">
+        <img src="img/line-2.png" class="in-line">
+    </div>
+
+    <!-- events -->
+    <div class="container text-center mt-2" id="events">
+        <img src="img/line-1.png" class="top-line">
+        <div class="list-card text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8 mt-4 mb-4">
+                    <h5 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
+                        Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/Ibu/Saudara/i,
+                        untuk menghadiri resepsi
+                        pernikahan putra-putri kami.</h5>
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                        data-aos-duration="1200" data-aos-easing="ease-in-out">
+                        <div class="card-body">
+                            <img src="img/rose.png" width="20%" class="arts1">
+                            <table width="100%">
+                                <tr>
+                                    <td width="30%" class="text-right align-middle">
+                                        <img src="img/ring.png" width="75%" style="opacity:0.6;">
+                                    </td>
+                                    <td class="text-left pl-3">
+                                        <h3 class="text-muted" style="font-family: 'Damion', cursive;">
+                                            Akad </h3>
+                                        <div class="line" style="margin-top:-10px; margin-bottom: 10px;"></div>
+                                        <h6>Pukul 00:00 WIB</h6>
+                                        <h6>Selasa, 00 Maret 1998</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <img src="img/flow.png" width="30%" class="arts2">
+                        </div>
+                    </div>
+
+                    <div class="card mt-5 mb-5" data-aos="fade-up" data-aos-offset="100" data-aos-delay="600"
+                        data-aos-duration="1200" data-aos-easing="ease-in-out">
+                        <div class="card-body">
+                            <img src="img/rose.png" width="20%" class="arts1">
+                            <table width="100%">
+                                <tr>
+                                    <td width="30%" class="text-right align-middle">
+                                        <img src="img/celeberate.png" width="85%" style="opacity:0.6;">
+                                    </td>
+                                    <td class="text-left pl-3">
+                                        <h3 class="text-muted" style="font-family: 'Damion', cursive;">
+                                            Resepsi </h3>
+                                        <div class="line" style="margin-top:-10px; margin-bottom: 10px;"></div>
+                                        <h6>Pukul 00:00 WIB</h6>
+                                        <h6>Selasa, 00 Maret 1998</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur
+                                        </p>
+                                </tr>
+                            </table>
+                            <img src="img/flow.png" width="30%" class="arts2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/line-1.png" class="bottom-line">
+    </div>
+    <div class="text-center">
+        <img src="img/line-2.png" class="in-line">
+    </div>
+
+    <!-- maps -->
+    <div class="container text-center mt-2 " id="maps">
+        <img src="img/line-1.png" class="top-line">
+        <div class="list-card text-center">
+            <div class="row">
+                <div class="col-md-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7910.119653409935!2d110.8494796726463!3d-7.568456842769498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16552309b4a5%3A0x5027a76e356c7c0!2sPucangsawit%2C%20Jebres%2C%20Surakarta%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1610442566126!5m2!1sen!2sid"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out"></iframe>
+                </div>
+                <div class="col-md-4 text-left mt-2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" id="form-ucapan">
+                    <div class="form-group text-left">
+                        <label>Nama Tamu Undangan :</label>
+                        <input type="text" name="nama_tamu" id="namaTamu" class="form-control" required>
+                    </div>
+                    <div class="form-group text-left">
+                        <label>Ucapan :</label>
+                        <textarea name="ucapan" id="ucapan" rows="10" class="form-control" required></textarea>
+                    </div>
+                    <button id="btn-submit" class="btn btn-primary">Kirim Ucapan</button>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4 mb-4">
+                <div class="col-8">
+                    <h5 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">Yang Berbahagia,</h5>
+                    <h5 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">Keluarga Agus Supriyanto, S.Pd & Ibu Hartini</h5>
+                    <h5 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">- & -</h5>
+                    <h5 data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">Keluarga Bapak Supardi & Ibu Waris</h5>
+                </div>
+            </div>
+        </div>
+        <img src="img/line-1.png" class="bottom-line">
+    </div>
+    <div class="container" style="height: 100px;">
+
+    </div>
+
+    <div class="modal fade" id="alertMsg" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="alert">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDuR9w9hyA_O8wITMUB0Azx9K-p7gg6vdc",
+        authDomain: "wedding-9d89a.firebaseapp.com",
+        projectId: "wedding-9d89a",
+        storageBucket: "wedding-9d89a.appspot.com",
+        messagingSenderId: "68200932798",
+        appId: "1:68200932798:web:bb123776e4ee1d5a88c5ef",
+        measurementId: "G-SV5Z9XMN9K"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const db = firebase.database()
+    const blogRef = db.ref('tamu').on('value', handleSuccess, handleError)
+
+    function handleSuccess(items) {
+        // console.log(items.val())
+    }
+
+    function handleError(erro) {
+        console.log(error)
+    }
+
+    function writeUserData(userId, nama, ucapan, date) {
+        if (ucapan == "") {
+            $("#alertTitle").html("Konfirmasi Ucapan")
+            $("#alert").html("Silahkan masukan ucapan terlebih dahulu.")
+            $("#alertMsg").modal("show")
+            // alert("Silahkan masukan ucapan terlebih dahulu.")
+        } else {
+            db.ref('tamu/' + userId).set({
+                nama: nama,
+                tgl_kirim: date,
+                ucapan: ucapan
+            }, (error) => {
+                if (error) {
+                    $("#alertTitle").html("Konfirmasi Ucapan")
+                    $("#alert").html("Ucapan anda gagal dikirim.")
+                    $("#alertMsg").modal("show")
+                } else {
+                    $("#alertTitle").html("Konfirmasi Ucapan")
+                    $("#alert").html("Ucapan anda berhasil dikirim.")
+                    $("#alertMsg").modal("show")
+                    $("#form-ucapan").hide()
+                }
+            });
+        }
+    }
+
+    $("#btn-submit").click(function () {
+        let date = new Date();
+        let y = date.getFullYear();
+        let m = date.getMonth() + 1;
+        let d = date.getDate();
+        let newDate = d + "/" + m + "/" + y
+
+        let n = $('#namaTamu').val()
+        let u = $('#ucapan').val()
+        let id = Math.floor(Math.random() * 100000);
+        writeUserData(id, n, u, newDate)
+    });
+</script>
+<script>
+    AOS.init();
+    // $('#myModal').modal('show');
+</script>
+<script>
+    var x = document.getElementById("playAudio");
+    var y = document.getElementById("playButton");
+    var z = document.getElementById("stopButton");
+    z.style.display = "none";
+    function playAudio() {
+        x.play();
+        y.style.display = "none";
+        z.style.display = "block";
+    }
+
+    function stopAudio() {
+        x.pause();
+        y.style.display = "block";
+        z.style.display = "none";
+    }
+</script>
+<script>
+    function GetURLParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
+            }
+        }
+    }
+    var name = GetURLParameter('n').split("-");
+    document.getElementById("name").innerHTML = name.replace(/,/g, " ");
+    $('#namaTamu').val(name.replace(/,/g, " "))
+</script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+
+</html>
