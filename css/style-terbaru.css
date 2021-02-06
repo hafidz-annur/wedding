@@ -216,6 +216,8 @@
             z-index: 99;
             padding: 100px 100px;
             position: relative;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png");
         }
 
         .list-ucapan {
@@ -395,7 +397,7 @@
                 position: relative;
                 z-index: 2;
                 padding: 10px;
-                padding-top: 30px;
+                padding-top: 50px;
                 padding-bottom: 50px;
             }
 
@@ -450,6 +452,27 @@
 
         .custom-shape-divider-top-1612355560 .shape-fill {
             fill: #ffffff;
+        }
+
+        .custom-shape-divider-top-1612631029 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            z-index: 99;
+        }
+
+        .custom-shape-divider-top-1612631029 svg {
+            position: relative;
+            display: block;
+            width: calc(160% + 1.3px);
+            height: 61px;
+        }
+
+        .custom-shape-divider-top-1612631029 .shape-fill {
+            fill: #F2D9CD;
         }
 
         /** For mobile devices **/
