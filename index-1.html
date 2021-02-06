@@ -17,7 +17,7 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-terbaru.css">
 
 <body>
     <!-- musik -->
@@ -270,6 +270,7 @@
                         <div class="card-body">
                             <div class="form-group text-left">
                                 <small>Nama Tamu Undangan :</small>
+                                <input type="text" name="id" id="userId" class="form-control" hidden>
                                 <input type="text" name="nama_tamu" id="namaTamu" class="form-control" required>
                             </div>
                             <div class="form-group text-left mt-2">
@@ -328,7 +329,7 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/new-script.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -439,7 +440,6 @@
 
         function listTamu() {
             let tamu = db.ref("tamu/");
-            console.log(tamu)
             // Dapatkan referensi table
             var list_ucapan = document.getElementById("list-ucapan")
 
@@ -450,7 +450,7 @@
                     "<div div class='list'>" +
                     "<div class='row no-gutters'>" +
                     "<div class='col-md-1 text-center'>" +
-                    "<i class='far fa-user-circle fa-2x'></i>" +
+                    "<img src='img/robot/" + datas.avatar + "' class='img-ucapan'/>" +
                     "</div>" +
                     "<div class='col-md-11'>" +
                     "<h6 class='tamuNama'>" + datas.nama + "</h6>" +
@@ -477,7 +477,23 @@
             console.log(error)
         }
 
-        function writeUserData(userId, nama, ucapan, date) {
+        function userId() {
+            let tamus = db.ref("tamu/").limitToLast(1);
+            tamus.on("child_added", function (data, prevChildKey) {
+                let id = parseInt(data.key) + 1
+                $("#userId").val(id)
+            });
+        }
+
+        userId();
+
+        function avatar() {
+            let avatar = ['rb-1.png', 'rb-2.png', 'rb-3.png', 'rb-4.png']
+            var rand = avatar[(Math.random() * avatar.length) | 0]
+            return rand
+        }
+
+        function writeUserData(userId, nama, ucapan, date, newAvatar) {
             if (ucapan == "" || nama == "") {
                 $("#alertTitle").html("Konfirmasi Ucapan")
                 $("#alert").html("Silahkan masukan nama & ucapan terlebih dahulu.")
@@ -487,7 +503,8 @@
                 db.ref('tamu/' + userId).set({
                     nama: nama,
                     tgl_kirim: date,
-                    ucapan: ucapan
+                    ucapan: ucapan,
+                    avatar: newAvatar
                 }, (error) => {
                     if (error) {
                         $("#alertTitle").html("Konfirmasi Ucapan")
@@ -509,12 +526,16 @@
             let y = date.getFullYear();
             let m = date.getMonth() + 1;
             let d = date.getDate();
-            let newDate = d + "/" + m + "/" + y
+            let h = date.getHours();
+            let min = date.getMinutes();
+            let s = date.getSeconds();
+            let newDate = d + "/" + m + "/" + y + " - " + h + ":" + min + ":" + s
 
             let n = $('#namaTamu').val()
             let u = $('#ucapan').val()
-            let id = Math.floor(Math.random() * 100000);
-            writeUserData(id, n, u, newDate)
+            let id = $('#userId').val();
+            let newAvatar = avatar()
+            writeUserData(id, n, u, newDate, newAvatar)
         });
     </script>
 </body>

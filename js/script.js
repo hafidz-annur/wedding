@@ -1,6 +1,5 @@
 $(window).scroll(function () {
     var wScroll = $(this).scrollTop()
-    console.log(wScroll)
 
     $(".bg1").css({
         'transform': 'translate(0px, ' + wScroll / 20 + '%)',

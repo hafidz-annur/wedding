@@ -241,6 +241,10 @@
             font-size: 12px;
         }
 
+        .img-ucapan {
+            width: 90%;
+        }
+
         @media only screen and (max-width: 800px) and (min-width: 0px) {
             p {
                 font-size: 16px;
@@ -391,6 +395,7 @@
                 position: relative;
                 z-index: 2;
                 padding: 10px;
+                padding-top: 30px;
                 padding-bottom: 50px;
             }
 
@@ -399,6 +404,10 @@
                 height: 430px;
                 overflow-x: hidden;
                 border: 0px;
+            }
+
+            .img-ucapan {
+                width: 15%;
             }
         }
 
