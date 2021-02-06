@@ -1,0 +1,456 @@
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            letter-spacing: 1.1px;
+            line-height: 1.6 !important;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .h1-title {
+            font-family: 'Parisienne', cursive;
+            text-shadow: 1px 1px #918d8d;
+        }
+
+        h3 {
+            font-family: 'Parisienne', cursive;
+            text-shadow: 1px 1px #918d8d;
+            color: #64B5C7
+        }
+
+        .container-fluid {
+            padding: 0 !important;
+        }
+
+        #home {
+            height: 760px;
+            width: 100%;
+            background: url("../bg-flower/1-bg.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png");
+        }
+
+        #home .bg {
+            width: 100%;
+            position: absolute;
+        }
+
+        .bg-desktop {
+            display: block;
+        }
+
+        .bg-mobile {
+            display: none;
+        }
+
+        .home-col {
+            margin-top: 15%;
+        }
+
+        .home-title {
+            font-family: 'Parisienne', cursive;
+            font-weight: 500;
+            text-shadow: 1px 1px gray;
+            font-size: 75px
+        }
+
+        .home-couple {
+            font-family: 'Parisienne', cursive;
+            font-weight: 500;
+            text-shadow: 1px 1px gray;
+            font-size: 50px;
+        }
+
+        .home-date {
+            margin-top: 80px;
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        #couple {
+            height: 100vh;
+            /* background: url("../bg-flower/bg-couple.png"); */
+            background-color: #ffffff;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 99;
+            padding: 50px 100px;
+        }
+
+        #couple .bg {
+            position: absolute;
+        }
+
+        .doa-title {
+            width: 25%;
+        }
+
+        .couple1 {
+            margin-top: -30px;
+            width: 300px;
+            z-index: 2;
+        }
+
+        #couple h3 {
+            font-size: 35px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #couple h5 {
+            font-family: 'Parisienne', cursive;
+        }
+
+        #event {
+            position: relative;
+            height:auto;
+            background: url("../bg-flower/bg-couple.png");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding : 100px 200px 70px 200px;
+        }
+
+        .card-1 {
+            border-radius:15px 75px; 
+            background: rgb(255, 255, 255);
+            border:0px;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png");
+        }
+
+        .card-2 {
+            border-radius:75px 15px; 
+            background: rgb(255, 255, 255);
+            border:0px;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png");
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .modal {
+            background: url("../bg-flower/bg-couple.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .modal-content {
+            background: url("../img/bg-card-2.jpg") !important;
+            background-size: cover !important;
+            background-position: bottom !important;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("img/grit.png");
+        }
+
+        #event .bg {
+            position: absolute;
+        }
+
+        .couple2 {
+            margin-top: -280px;
+            left: 0px;
+            width: 400px;
+            z-index: 2;
+        }
+
+        .countdown {
+            position: absolute;
+            bottom: 15%;
+        }
+
+        .time {
+            font-weight: 600;
+            background: white;
+            padding: 10px 0 8px 0;
+            margin: 17px 5px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #doa {
+            background: rgb(255, 255, 255);
+            padding: 50px 200px 50px 200px;
+            text-align: center;
+            -webkit-mask-image: url("../img/pink-grit.png");
+            mask-image: url("../img/pink-grit.png");
+        }
+
+        #maps {
+            height: 100vh;
+            background-color: #F2D9CD;
+            -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 99;
+            padding: 100px 100px;
+        }
+
+        .audio-button {
+            position: fixed;
+            z-index: 99999;
+            top: 2%;
+            right: 2%
+        }
+
+        .btn-circle {
+            border-radius: 50px;
+            padding-right: 12px;
+            padding-left: 12px;
+            background: rgb(218, 205, 136);
+            border: 1px gold;
+        }
+
+        #ucapans {
+            height: 100vh;
+            z-index: 99;
+            padding: 100px 100px;
+            position: relative;
+        }
+
+        .list-ucapan {
+            padding: 10px 20px;
+            height: 430px;
+            border-radius: 5px;
+            overflow-x: hidden;
+            border: 1px solid #dedede;
+        }
+
+        .list-ucapan h6 {
+            font-size: 14px;
+            margin-bottom: -5px !important;
+        }
+
+        .list-ucapan small {
+            font-size: 11px;
+            color: rgb(139, 139, 253);
+        }
+
+        .list-ucapan p {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        @media only screen and (max-width: 800px) and (min-width: 0px) {
+            p {
+                font-size: 16px;
+            }
+
+            #home {
+                height: 640px;
+                background: url("../bg-flower/mobile/1-bg.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+            }
+
+            #home .bg {
+                width: 100%;
+                position: absolute;
+                background-size: cover;
+            }
+
+            .bg-desktop {
+                display: none;
+            }
+
+            .bg-mobile {
+                display: block;
+            }
+
+            .home-col {
+                margin-top: 60%;
+                margin-left: 10px;
+            }
+
+            .home-title {
+                font-family: 'Parisienne', cursive;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                font-size: 45px
+            }
+
+            .home-couple {
+                font-family: 'Parisienne', cursive;
+                font-weight: 500;
+                text-shadow: 1px 1px gray;
+                font-size: 30px;
+            }
+
+            .home-date {
+                margin-top: 30px;
+                font-size: 15px;
+                font-weight: 100;
+            }
+
+            #couple {
+                height: 100%;
+                background-size: cover;
+                background-position: top right;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 2;
+                padding: 50px 10px;
+            }
+
+            .doa-title {
+                width: 55%;
+            }
+
+            .couple1-mobile {
+                text-align: center;
+                width: 100%;
+                padding:0 50px;
+                margin:-20px 0;
+            }
+
+            .couple-title {
+                margin-top: 20px;
+            }
+
+            #couple h3 {
+                font-size: 25px;
+                font-family: 'Dancing Script', cursive;
+            }
+
+            #couple h5 {
+                font-size: 20px;
+                font-family: 'Parisienne', cursive;
+            }
+
+            #event {
+                height: 100vh;
+                padding : 70px 10px;
+            }
+
+            body {
+                max-width: 414px;
+            }
+
+            #event {
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100%;
+            }
+
+            .card-1,
+            .card-2 {
+                border-radius: 10px;
+            }
+
+            #event .bg {
+                position: relative;
+            }
+
+            .couple2-mobile {
+                width: 100%;
+                padding: 0 70px;
+                margin-bottom: -20px;
+                margin-top: -30px;
+            }
+
+            .countdown {
+                position: relative;
+                margin-top: 5px;
+            }
+
+            .mobile-center {
+                text-align: center;
+            }
+
+            .mobile-center img {
+                width: 100px;
+            }
+
+            #doa {
+                padding: 50px 15px 50px 15px;
+                text-align: center;
+            }
+
+            #maps {
+                height: 100%;
+                max-width: 100%;
+                padding: 50px 10px 100px 10px;
+            }
+
+            #ucapans {
+                height: 100vh;
+                background-size: cover;
+                background-position: top right;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 2;
+                padding: 10px;
+                padding-bottom: 50px;
+            }
+
+            .list-ucapan {
+                margin-top: 20px;
+                height: 430px;
+                overflow-x: hidden;
+                border: 0px;
+            }
+        }
+
+        .custom-shape-divider-bottom-1611758739 {
+            position: absolute;
+            bottom: -70px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(360deg);
+        }
+
+        .custom-shape-divider-bottom-1611758739 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 70px;
+        }
+
+        .custom-shape-divider-bottom-1611758739 .shape-fill {
+            fill: #ffffff;
+        }
+
+        .custom-shape-divider-top-1612355560 {
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-top-1612355560 svg {
+            position: relative;
+            display: block;
+            width: calc(198% + 1.3px);
+            height: 72px;
+        }
+
+        .custom-shape-divider-top-1612355560 .shape-fill {
+            fill: #ffffff;
+        }
+
+        /** For mobile devices **/
+        @media (max-width: 767px) {
+            .custom-shape-divider-bottom-1611758739 svg {
+                width: calc(139% + 1.3px);
+                height: 53px;
+            }
+
+            .custom-shape-divider-bottom-1611758739 {
+                bottom: -52px;
+            }
+        }
