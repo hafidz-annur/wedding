@@ -288,6 +288,7 @@
                             <div class="form-group text-left">
                                 <small>Nama Tamu Undangan :</small>
                                 <input type="text" name="id" id="userId" class="form-control" hidden>
+                                <input type="text" name="order" id="order" class="form-control" hidden>
                                 <input type="text" name="nama_tamu" id="namaTamu" class="form-control" required>
                             </div>
                             <div class="form-group text-left mt-2">
@@ -479,13 +480,14 @@
         const blogRef = db.ref('tamu').on('value', handleSuccess, handleError)
 
         function listTamu() {
-            let tamu = db.ref("tamu/");
+            let tamu = db.ref("tamu/").orderByChild("order");
             // Dapatkan referensi table
             var list_ucapan = document.getElementById("list-ucapan")
 
             // Memuat Data
             tamu.on("child_added", function (data, prevChildKey) {
                 var datas = data.val();
+                console.log(datas)
                 $(".list-ucapan").append(
                     "<div div class='list'>" +
                     "<div class='row no-gutters'>" +
@@ -522,6 +524,8 @@
             tamus.on("child_added", function (data, prevChildKey) {
                 let id = parseInt(data.key) + 1
                 $("#userId").val(id)
+                let order = parseInt(data.val().order) - 1
+                $("#order").val(order)
             });
         }
 
@@ -533,7 +537,7 @@
             return rand
         }
 
-        function writeUserData(userId, nama, ucapan, date, newAvatar) {
+        function writeUserData(userId, nama, ucapan, date, newAvatar, order) {
             if (ucapan == "" || nama == "") {
                 $("#alertTitle").html("Konfirmasi Ucapan")
                 $("#alert").html("Silahkan masukan nama & ucapan terlebih dahulu.")
@@ -544,6 +548,7 @@
                     nama: nama,
                     tgl_kirim: date,
                     ucapan: ucapan,
+                    order: parseInt(order),
                     avatar: newAvatar
                 }, (error) => {
                     if (error) {
@@ -574,8 +579,9 @@
             let n = $('#namaTamu').val()
             let u = $('#ucapan').val()
             let id = $('#userId').val();
+            let order = $('#order').val();
             let newAvatar = avatar()
-            writeUserData(id, n, u, newDate, newAvatar)
+            writeUserData(id, n, u, newDate, newAvatar, order)
         });
     </script>
     <script>
