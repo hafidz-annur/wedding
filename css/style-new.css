@@ -212,9 +212,9 @@
         }
 
         #ucapans {
-            height: 100vh;
-            z-index: 99;
-            padding: 100px 100px;
+            height: 100%;
+            z-index:-1;
+            padding: 30px 100px;
             position: relative;
             -webkit-mask-image: url("../img/grit.png");
             mask-image: url("../img/grit.png");
@@ -391,13 +391,8 @@
 
             #ucapans {
                 height: 100%;
-                background-size: cover;
-                background-position: top right;
-                background-repeat: no-repeat;
-                position: relative;
-                z-index: 2;
                 padding: 10px;
-                padding-top: 50px;
+                padding-top: 20px;
                 padding-bottom: 50px;
             }
 
@@ -454,27 +449,34 @@
             fill: #ffffff;
         }
 
-        .custom-shape-divider-top-1612631029 {
+        .custom-shape-divider-bottom-1612657513 {
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
             width: 100%;
             overflow: hidden;
             line-height: 0;
-            z-index: 99;
+            transform: rotate(180deg);
         }
 
-        .custom-shape-divider-top-1612631029 svg {
+        .custom-shape-divider-bottom-1612657513 svg {
             position: relative;
             display: block;
-            width: calc(160% + 1.3px);
+            width: calc(152% + 1.3px);
             height: 61px;
         }
 
-        .custom-shape-divider-top-1612631029 .shape-fill {
-            fill: #F2D9CD;
-        }
+        .custom-shape-divider-bottom-1612657513 .shape-fill {
+            fill: #FFFFFF;
+}
 
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1612657513 svg {
+        width: calc(217% + 1.3px);
+        height: 61px;
+    }
+}
         /** For mobile devices **/
         @media (max-width: 767px) {
             .custom-shape-divider-bottom-1611758739 svg {
