@@ -18,8 +18,14 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
     <link rel="stylesheet" href="css/style-new.css">
+    <style>
+        .gallery-img {
+            width: 100%;
+        }
+    </style>
 
 <body>
     <!-- musik -->
@@ -300,6 +306,23 @@
                 </div>
             </div>
         </div>
+        <div id="gallery">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="img/gallery/1.jpg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/gallery/2.jpg" class="gallery-img">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/gallery/3.jpg" class="gallery-img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Buka Undangan Modal -->
@@ -351,6 +374,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <!-- Countdown timer  -->
     <script>
@@ -552,6 +576,14 @@
             let id = $('#userId').val();
             let newAvatar = avatar()
             writeUserData(id, n, u, newDate, newAvatar)
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide', {
+                type: 'fade',
+                rewind: true,
+            }).mount();
         });
     </script>
 </body>
