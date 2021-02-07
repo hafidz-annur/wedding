@@ -340,7 +340,7 @@
             }
 
             body {
-                max-width: 414px;
+                max-width: 100%;
             }
 
             #event {
