@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Wedding of Hafidz & Ismi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <title>Wedding</title>
+    <link rel="stylesheet" href="css/style-newest2.css">
+    <style>
+        .mobile-container {
+            width: 450px;
+            margin: auto;
+            margin-top: -10px;
+        }
+
+        @media only screen and (max-width: 800px) and (min-width: 0px) {
+            .mobile-container {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="mobile-container">
+            <div id="home" data-aos="fade-up">
+                <div class="row">
+                    <div class="col position-absolute text-center home-col animate__animated animate__fadeInUp animate__delay-2s"
+                        style="z-index: 2;" id="title">
+                        <h1 class="home-title">The Wedding of</h1>
+                        <h1 class="home-couple">Hafidz & Ismi</h1>
+                        <h5 class="home-date">- Sunday, July, 25st 2021 -</h5>
+                    </div>
+                </div>
+                <img src="bg-flower/mobile/5-bg.png" class="bg bg1">
+                <img src=" bg-flower/mobile/4-bg.png" class="bg bg2">
+                <img src="bg-flower/mobile/3-bg.png" class="bg bg3">
+                <img src="bg-flower/mobile/2-bg.png" class="bg bg4">
+            </div>
+            <div id="couple">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-md-12 text-center">
+                        <h4>
+                            بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْ
+                        </h4>
+                        <p class="m-5 text-center">
+                            Assalamu'alaikum Warahmatullahi Wabarakatuh<br><br>
+                            Dengan Rahmat dan Ridlo Allah SWT.
+                            Kami mengharap dengan hormat atas kehadiran
+                            Bapak/Ibu/Saudara/i pada pernikahan Putra-Putri kami
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="img/photo/hafidz.png" width=30%" data-aos="zoom-in">
+                        <div data-aos="fade-up">
+                            <h3>Hafidz Annur Fanany</h3>
+                            <h6>Putra Bapak Agus Supriyanto & Ibu
+                                Hartini
+                            </h6>
+                        </div>
+                    </div>
+                    <h4 class="text-center mt-5 mb-5" data-aos="zoom-in">Dengan</h4>
+                    <div class="col-12 text-center">
+                        <img src="img/photo/ismi.png" width=30%" data-aos="zoom-in">
+                        <div data-aos="fade-up">
+                            <h3>Ismi Nur Aini</h3>
+                            <h6>Putri Bapak Supardi & Ibu Waris
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="event" data-aos="fade-up">
+                <div class="row">
+                    <h1 class="h1-title text-center mb-5">Events</h1>
+                    <div class="col-md-6 align-self-center">
+                        <img src="img/wed-1.png" class="bg couple2 d-lg-block d-none" id="couple2">
+                        <img src="img/wed-1.png" class="couple2-mobile d-block d-sm-none">
+                        <div class="countdown">
+                            <table class="table">
+                                <tr class="text-center">
+                                    <td width="25%">
+                                        <p class="time" id="day"></p>
+                                        <button class="btn btn-primary"
+                                            style="margin-top: -20px; width: 100%;">Days</button>
+                                    </td>
+                                    <td width="25%">
+                                        <p class="time" id="hour"></p>
+                                        <button class="btn btn-primary"
+                                            style="margin-top: -20px; width: 100%;">Hours</button>
+                                    </td>
+                                    <td width="25%">
+                                        <p class="time" id="minute"></p>
+                                        <button class="btn btn-primary"
+                                            style="margin-top: -20px; width: 100%;">Minutes</button>
+                                    </td>
+                                    <td width="25%">
+                                        <p class="time" id="second"></p>
+                                        <button class="btn btn-primary"
+                                            style="margin-top: -20px; width: 100%;">Seconds</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4 shadow card-1">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 align-self-center mb-2 mobile-center">
+                                        <img src="img/ring.png" width="100%">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3 class="mobile-center mb-3">Akad Nikah</h3>
+                                        <table class="text-left">
+                                            <tr>
+                                                <td><i class="far fa-clock fa-fw"></i></td>
+                                                <td>Pukul 00:00 WIB</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">
+                                                    <i class="far fa-calendar-alt fa-fw"></i>
+                                                </td>
+                                                <td>
+                                                    Sabtu, 24 Maret 2021
+                                                    <hr style="margin:10px 0px;">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td valign="top">
+                                                    <i class="fa fa-map-pin fa-fw"></i>
+                                                </td>
+                                                <td>
+                                                    <small>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                                        consequuntur
+                                                    </small>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow card-2">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 align-self-center mb-2 mobile-center">
+                                        <img src="img/celeberate.png" width="100%">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h3 class="mobile-center mb-3">Resepsi</h3>
+                                        <table class="text-left">
+                                            <tr>
+                                                <td><i class="far fa-clock fa-fw"></i></td>
+                                                <td>Pukul 00:00 WIB</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">
+                                                    <i class="far fa-calendar-alt fa-fw"></i>
+                                                </td>
+                                                <td>
+                                                    Minggu, 25 Maret 2021
+                                                    <hr style="margin:10px 0px;">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td valign="top">
+                                                    <i class="fa fa-map-pin fa-fw"></i>
+                                                </td>
+                                                <td>
+                                                    <small>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                                        consequuntur
+                                                    </small>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-5 text-center">
+                        <a href="#" class="btn btn-light shadow">
+                            <i class="far fa-calendar-check"></i> &nbsp; SaveTheDate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- Countdown timer  -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jul 25, 2021 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("day").innerHTML = days;
+            document.getElementById("hour").innerHTML = hours;
+            document.getElementById("minute").innerHTML = minutes;
+            document.getElementById("second").innerHTML = seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("day").innerHTML = "00";
+                document.getElementById("hour").innerHTML = "00";
+                document.getElementById("minute").innerHTML = "00";
+                document.getElementById("second").innerHTML = "00";
+            }
+        }, 1000);
+    </script>
+    <!-- Other  -->
+    <script>
+        $(document).ready(function () {
+            AOS.init();
+            $('#bukaUndangan').modal("show")
+            $("#maps-akad").show();
+            $("#maps-resepsi").hide();
+            $("#content").hide();
+            $("#playButton").hide();
+            $(".welcome-img").hide();
+            $(".welcome-img").fadeIn(4000);;
+        });
+
+        $("#bukaTombol").click(function () {
+            $("#content").fadeIn(3000);
+            var x = document.getElementById("playAudio");
+            var y = document.getElementById("playButton");
+            var z = document.getElementById("stopButton");
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        });
+
+        var x = document.getElementById("playAudio");
+        var y = document.getElementById("playButton");
+        var z = document.getElementById("stopButton");
+        z.style.display = "none";
+        function playAudio() {
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+
+        function stopAudio() {
+            x.pause();
+            y.style.display = "block";
+            z.style.display = "none";
+        }
+
+        $("#akad").click(function () {
+            $("#maps-akad").fadeIn("slow");
+            $("#maps-resepsi").hide();
+        });
+
+        $("#resepsi").click(function () {
+            $("#maps-akad").hide();
+            $("#maps-resepsi").fadeIn("slow");
+        });
+    </script>
+    <!-- nama tamu -->
+    <script>
+        function GetURLParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) {
+                    return sParameterName[1];
+                }
+            }
+        }
+        var name = GetURLParameter('n').split("-");
+        var finalName = name.replace(/,/g, " ");
+        if (name != "") {
+            document.getElementById("name").innerHTML = finalName
+        } else {
+            document.getElementById("name").innerHTML = "Di Tempat"
+        }
+    </script>
+    <!-- Firebase  -->
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDuR9w9hyA_O8wITMUB0Azx9K-p7gg6vdc",
+            authDomain: "wedding-9d89a.firebaseapp.com",
+            projectId: "wedding-9d89a",
+            storageBucket: "wedding-9d89a.appspot.com",
+            messagingSenderId: "68200932798",
+            appId: "1:68200932798:web:bb123776e4ee1d5a88c5ef",
+            measurementId: "G-SV5Z9XMN9K"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        const db = firebase.database()
+        const blogRef = db.ref('tamu').on('value', handleSuccess, handleError)
+
+        function listTamu() {
+            let tamu = db.ref("tamu/").orderByChild("order");
+            // Dapatkan referensi table
+            var list_ucapan = document.getElementById("list-ucapan")
+
+            // Memuat Data
+            tamu.on("child_added", function (data, prevChildKey) {
+                var datas = data.val();
+                $(".list-ucapan").append(
+                    "<div div class='list'>" +
+                    "<div class='row no-gutters'>" +
+                    "<div class='col-md-1 text-center'>" +
+                    "<img src='img/robot/" + datas.avatar + "' class='img-ucapan'/>" +
+                    "</div>" +
+                    "<div class='col-md-11'>" +
+                    "<h6 class='tamuNama'>" + datas.nama + "</h6>" +
+                    "<small class='tamuTanggal'>" + datas.tgl_kirim + "</small>" +
+                    "<hr style='margin:0px;'>" +
+                    "<p class='tamuUcapan'>" +
+                    datas.ucapan +
+                    "</p>" +
+                    "</div>" +
+                    " </div>" +
+                    "</div>"
+                )
+            });
+        }
+
+        listTamu();
+
+
+        function handleSuccess(items) {
+            // console.log(items.val())
+        }
+
+        function handleError(erro) {
+            console.log(error)
+        }
+
+        function userId() {
+            let tamus = db.ref("tamu/").limitToLast(1);
+            tamus.on("child_added", function (data, prevChildKey) {
+                let id = parseInt(data.key) + 1
+                $("#userId").val(id)
+                let order = parseInt(data.val().order) - 1
+                $("#order").val(order)
+            });
+        }
+
+        userId();
+
+        function avatar() {
+            let avatar = ['rb-1.png', 'rb-2.png', 'rb-3.png', 'rb-4.png']
+            var rand = avatar[(Math.random() * avatar.length) | 0]
+            return rand
+        }
+
+        function writeUserData(userId, nama, ucapan, date, newAvatar, order) {
+            if (ucapan == "" || nama == "") {
+                $("#alertTitle").html("Konfirmasi Ucapan")
+                $("#alert").html("Silahkan masukan nama & ucapan terlebih dahulu.")
+                $("#alertMsg").modal("show")
+                // alert("Silahkan masukan ucapan terlebih dahulu.")
+            } else {
+                db.ref('tamu/' + userId).set({
+                    nama: nama,
+                    tgl_kirim: date,
+                    ucapan: ucapan,
+                    order: parseInt(order),
+                    avatar: newAvatar
+                }, (error) => {
+                    if (error) {
+                        $("#alertTitle").html("Konfirmasi Ucapan")
+                        $("#alert").html("Ucapan anda gagal dikirim.")
+                        $("#alertMsg").modal("show")
+                    } else {
+                        $("#alertTitle").html("Konfirmasi Ucapan")
+                        $("#alert").html(nama + ", Ucapan anda berhasil dikirim. <br> Terima Kasih atas kunjungan anda.")
+                        $("#alertMsg").modal("show")
+                        $("#form-ucapan").hide()
+                    }
+                });
+            }
+        }
+
+
+        $("#btn-submit").click(function () {
+            let date = new Date();
+            let y = date.getFullYear();
+            let m = date.getMonth() + 1;
+            let d = date.getDate();
+            let h = date.getHours();
+            let min = date.getMinutes();
+            let s = date.getSeconds();
+            let newDate = d + "/" + m + "/" + y + " - " + h + ":" + min + ":" + s
+
+            let n = $('#namaTamu').val()
+            let u = $('#ucapan').val()
+            let id = $('#userId').val();
+            let order = $('#order').val();
+            let newAvatar = avatar()
+            writeUserData(id, n, u, newDate, newAvatar, order)
+        });
+    </script>
+</body>
+
+</html>

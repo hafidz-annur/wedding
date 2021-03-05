@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Satisfy&display=swap');
+#home {
+    margin: -10px;
+    height: 700px;
+    background: url("../bg-flower/mobile/1-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#home .bg {
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.bg-desktop {
+    display: none;
+}
+
+.bg-mobile {
+    display: block;
+}
+
+.home-col {
+    margin-top: 60%;
+    margin-left: 10px;
+}
+
+.home-title {
+    font-family: 'Satisfy', cursive;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+    font-size: 45px
+}
+
+.home-couple {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+    font-size: 30px;
+}
+
+.home-date {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#couple {
+    height: auto;
+    margin: -10px;
+    background-color: #ffffff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 99;
+    padding: 50px 10px;
+}
+
+#event {
+    height: auto;
+    padding: 0 10px;
+    margin: -10px;
+    padding: 50px 10px;
+    background-color: #4688adb9;
+}
