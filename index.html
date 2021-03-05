@@ -36,10 +36,17 @@
 
         .welcome {
             padding: 0 10%;
+            z-index: 3;
         }
 
         .welcome-img {
             width: 100%;
+        }
+
+        .welcome-bg {
+            position: absolute;
+            left: 10%;
+            z-index: -5;
         }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
@@ -49,6 +56,12 @@
 
             .welcome-img {
                 width: 100%;
+            }
+
+            .welcome-bg {
+                width: 80%;
+                position: absolute;
+                left: 10%;
             }
         }
     </style>
@@ -373,14 +386,15 @@
                 <h2>Hafidz & Ismi</h2>
                 <div class="welcome">
                     <img src="img/photo/hi.png" class="welcome-img">
+                    <img src="img/photo/bg.png" class="welcome-bg">
                 </div>
-                <div class="card shadow">
+                <div class="card shadow" style="z-index: 3;">
                     <div class="card-body">
                         Kepada Yth: Bp/Ibu/Sdr/i :
                         <h5 id="name"></h5>
                     </div>
                 </div>
-                <button class="btn btn-dark btn-sm mt-2 mb-4" data-dismiss="modal" id="bukaTombol">
+                <button class="btn btn-dark btn-sm mt-2 mb-4" data-dismiss="modal" id="bukaTombol" style="z-index: 3;">
                     Buka Undangan
                 </button>
             </div>
