@@ -33,8 +33,8 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100%;
-            -webkit-mask-image: url("../img/grit.png");
-            mask-image: url("../img/grit.png");
+            /* -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("../img/grit.png"); */
         }
 
         #home .bg {
@@ -145,11 +145,11 @@
         }
 
         .modal-content {
-            background: url("../img/bg-card-2.jpg") !important;
+            /* background: url("../img/bg-card-2.jpg") !important; */
             background-size: cover !important;
-            background-position: bottom !important;
-            -webkit-mask-image: url("../img/grit.png");
-            mask-image: url("img/grit.png");
+            background-position: top !important;
+            /* -webkit-mask-image: url("../img/grit.png");
+            mask-image: url("img/grit.png"); */
         }
 
         #event .bg {
@@ -187,8 +187,6 @@
         #maps {
             height: 100vh;
             background-color: #F2D9CD;
-            -webkit-mask-image: url("../img/grit.png");
-            mask-image: url("../img/grit.png");
             background-size: 100%;
             background-repeat: no-repeat;
             position: relative;

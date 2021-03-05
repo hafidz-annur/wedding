@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style-new.css">
+    <link rel="stylesheet" href="css/style-new1.css">
     <style>
         #galls {
             width: 100%;
@@ -351,12 +351,13 @@
     <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered animate__animated animate__zoomIn" role="document">
             <div class="modal-content p-3 text-center">
-                <h2 class="mt-4">The Wedding of</h2>
+                <h2 class="mt-4 font">The Wedding of</h2>
                 <h2>Hafidz & Ismi</h2>
-                <div class="card mt-4">
+                <img src="img/photo/hi.png" width="100%">
+                <div class="card shadow">
                     <div class="card-body">
                         Kepada Yth: Bp/Ibu/Sdr/i :
-                        <h5>Nama Tamu</h5>
+                        <h5 id="name"></h5>
                     </div>
                 </div>
                 <button class="btn btn-dark btn-sm mt-2 mb-4" data-dismiss="modal" id="bukaTombol">
@@ -480,6 +481,26 @@
             $("#maps-resepsi").fadeIn("slow");
         });
     </script>
+    <!-- nama tamu -->
+    <script>
+        function GetURLParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) {
+                    return sParameterName[1];
+                }
+            }
+        }
+        var name = GetURLParameter('n').split("-");
+        var finalName = name.replace(/,/g, " ");
+        if (name != "") {
+            document.getElementById("name").innerHTML = finalName
+        } else {
+            document.getElementById("name").innerHTML = "Di Tempat"
+        }
+    </script>
     <!-- Firebase  -->
     <script>
         // Your web app's Firebase configuration
@@ -508,7 +529,6 @@
             // Memuat Data
             tamu.on("child_added", function (data, prevChildKey) {
                 var datas = data.val();
-                console.log(datas)
                 $(".list-ucapan").append(
                     "<div div class='list'>" +
                     "<div class='row no-gutters'>" +
