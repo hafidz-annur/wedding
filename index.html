@@ -22,6 +22,16 @@
     <title>Wedding</title>
     <link rel="stylesheet" href="css/style-new1.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Satisfy&display=swap');
+
+        .welcome-title {
+            font-family: 'Satisfy', cursive;
+        }
+
+        .welcome-name {
+            font-family: 'Kaushan Script', cursive;
+        }
+
         #galls {
             width: 100%;
             height: 100%;
@@ -382,11 +392,11 @@
     <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered animate__animated animate__zoomIn" role="document">
             <div class="modal-content p-3 text-center">
-                <h2 class="mt-4 font">The Wedding of</h2>
-                <h2>Hafidz & Ismi</h2>
+                <h2 class="mt-4 welcome-title">The Wedding of</h2>
+                <h2 class="welcome-name">Hafidz & Ismi</h2>
                 <div class="welcome">
                     <img src="img/photo/hi.png" class="welcome-img">
-                    <img src="img/photo/bg.png" class="welcome-bg">
+                    <img src=" img/photo/bg.png" class="welcome-bg">
                 </div>
                 <div class="card shadow" style="z-index: 3;">
                     <div class="card-body">
@@ -477,6 +487,8 @@
             $("#maps-akad").show();
             $("#maps-resepsi").hide();
             $("#content").hide();
+            $(".welcome-img").hide();
+            $(".welcome-img").fadeIn(4000);;
         });
 
         $("#bukaTombol").click(function () {
