@@ -88,48 +88,31 @@
                     </div>
                 </div>
             </div>
-            <div id="event" data-aos="fade-up">
+            <div id="event">
                 <div class="row">
-                    <h1 class="h1-title text-center mb-5">Events</h1>
-                    <div class="col-md-6 align-self-center">
-                        <img src="img/wed-1.png" class="bg couple2 d-lg-block d-none" id="couple2">
-                        <img src="img/wed-1.png" class="couple2-mobile d-block d-sm-none">
-                        <div class="countdown">
-                            <table class="table">
-                                <tr class="text-center">
-                                    <td width="25%">
-                                        <p class="time" id="day"></p>
-                                        <button class="btn btn-primary"
-                                            style="margin-top: -20px; width: 100%;">Days</button>
-                                    </td>
-                                    <td width="25%">
-                                        <p class="time" id="hour"></p>
-                                        <button class="btn btn-primary"
-                                            style="margin-top: -20px; width: 100%;">Hours</button>
-                                    </td>
-                                    <td width="25%">
-                                        <p class="time" id="minute"></p>
-                                        <button class="btn btn-primary"
-                                            style="margin-top: -20px; width: 100%;">Minutes</button>
-                                    </td>
-                                    <td width="25%">
-                                        <p class="time" id="second"></p>
-                                        <button class="btn btn-primary"
-                                            style="margin-top: -20px; width: 100%;">Seconds</button>
-                                    </td>
-                                </tr>
-                            </table>
+                    <h1 class="h1-title text-center mb-3" data-aos="fade-up">Events</h1>
+                    <div class="col-md-12 align-self-center">
+                        <div class="card countdown mb-4" data-aos="fade-up">
+                            <div class="card-body text-center text-countdown" data-aos="zoom-in">
+                                <span class="time" id="day"></span> :
+                                <span class="time" id="hour"></span> :
+                                <span class="time" id="minute"></span> :
+                                <span class="time" id="second"></span>
+                            </div>
+                        </div>
+                        <div class="img-event" data-aos="fade-up">
+                            <img src="img/photo/hi.png" width="100%">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="card mb-4 shadow card-1">
+                            <div class="card-header">
+                                <h3 class="mt-2" style="display:inline; float: left;">Akad Nikah</h3>
+                                <img src="img/ring.png" width="10%" style="display:inline; float: right;">
+                            </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-4 align-self-center mb-2 mobile-center">
-                                        <img src="img/ring.png" width="100%">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h3 class="mobile-center mb-3">Akad Nikah</h3>
+                                    <div class="col-12">
                                         <table class="text-left">
                                             <tr>
                                                 <td><i class="far fa-clock fa-fw"></i></td>
@@ -161,18 +144,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card shadow card-2">
+
+                    </div>
+                    <div class="col-md-12" data-aos="fade-up">
+                        <div class="card mb-4 shadow card-1">
+                            <div class="card-header">
+                                <h3 class="mt-2" style="display:inline; float: left;">Resepsi</h3>
+                                <img src="img/celeberate.png" width="10%" style="display:inline; float: right;">
+                            </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-4 align-self-center mb-2 mobile-center">
-                                        <img src="img/celeberate.png" width="100%">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h3 class="mobile-center mb-3">Resepsi</h3>
+                                    <div class="col-12">
                                         <table class="text-left">
                                             <tr>
                                                 <td><i class="far fa-clock fa-fw"></i></td>
-                                                <td>Pukul 00:00 WIB</td>
+                                                <td>Pukul 10:00 WIB</td>
                                             </tr>
                                             <tr>
                                                 <td valign="top">
@@ -200,6 +186,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="col-md-12 mt-5 text-center">
                         <a href="#" class="btn btn-light shadow">
