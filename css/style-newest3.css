@@ -64,7 +64,7 @@
     padding: 0 10px;
     margin: -10px;
     padding: 50px 10px;
-    background-color: #4688adb9;
+    background-color: #C7E6EB;
 }
 
 .countdown {
@@ -76,11 +76,23 @@
 }
 
 .text-countdown span {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Big Shoulders Inline Display', cursive;
     font-weight: bold;
 }
 
 .img-event {
     padding: 0 20%;
+}
+
+#doa {
+    background: rgb(255, 255, 255);
+    padding: 50px 10px;
+    text-align: center;
+    margin: -10px;
+}
+
+#maps {
+    background-color: #F2D9CD;
+    padding: 50px 10px;
 }
