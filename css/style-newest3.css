@@ -101,7 +101,7 @@
 #ucapans {
     height: 100%;
     z-index: 2;
-    padding: 30px 10px;
+    padding: 50px 10px;
     position: relative;
 }
 
@@ -141,28 +141,16 @@
     padding: 50px 10px 100px 10px;
 }
 
-.secondary-menu {
-    cursor: pointer;
-    background: #fad7c2d7;
-    padding: 10px 5px 5px 5px;
-    text-align: center;
-    font-size: 12px;
-    border: 1px solid #c7bfbf;
-}
-
-.secondary-menu:hover {
-    background: #C7E6EB;
-}
-
 .primary-menu {
+    color: white;
     cursor: pointer;
-    background: #C7E6EB;
+    background: #1F73BE;
     padding: 10px 5px 5px 5px;
     text-align: center;
     font-size: 12px;
-    border: 1px solid #c7bfbf;
 }
 
 .primary-menu:hover {
-    background: #fad7c2d7;
+    color: black;
+    background: #fad7c2;
 }
