@@ -95,6 +95,7 @@
 #maps {
     background-color: #F2D9CD;
     padding: 50px 10px;
+    margin: -10px;
 }
 
 #ucapans {
@@ -131,4 +132,37 @@
     width: 100%;
     padding-right: 10px;
     padding-top: 0%;
+}
+
+#gallery {
+    height: auto;
+    margin: -10px;
+    background-color: #C7E6EB;
+    padding: 50px 10px 100px 10px;
+}
+
+.secondary-menu {
+    cursor: pointer;
+    background: #fad7c2d7;
+    padding: 10px 5px 5px 5px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #c7bfbf;
+}
+
+.secondary-menu:hover {
+    background: #a2b8ff;
+}
+
+.primary-menu {
+    cursor: pointer;
+    background: #a2b8ff;
+    padding: 10px 5px 5px 5px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #c7bfbf;
+}
+
+.primary-menu:hover {
+    background: #fad7c2d7;
 }
