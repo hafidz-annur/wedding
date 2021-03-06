@@ -151,12 +151,12 @@
 }
 
 .secondary-menu:hover {
-    background: #a2b8ff;
+    background: #C7E6EB;
 }
 
 .primary-menu {
     cursor: pointer;
-    background: #a2b8ff;
+    background: #C7E6EB;
     padding: 10px 5px 5px 5px;
     text-align: center;
     font-size: 12px;
