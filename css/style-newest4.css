@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@700&display=swap');
 #home {
     margin: -10px;
-    height: 700px;
+    height: 400px;
     background: url("../bg-flower/mobile/1-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +24,7 @@
 }
 
 .home-col {
-    margin-top: 60%;
+    margin-top: 35%;
     margin-left: 10px;
 }
 
@@ -68,15 +68,16 @@
 }
 
 .countdown {
-    background: rgba(255, 255, 255, 0.692);
-    border-radius: 20px;
+    background: #4964c5;
+    border-radius: 10px;
     padding: 0;
-    margin: 0 20%;
+    margin-top: -25%;
     letter-spacing: 3px;
 }
 
 .text-countdown span {
-    font-size: 25px;
+    color: white;
+    font-size: 35px;
     font-family: 'Big Shoulders Inline Display', cursive;
     font-weight: bold;
 }
@@ -144,7 +145,7 @@
 .primary-menu {
     color: white;
     cursor: pointer;
-    background: #1F73BE;
+    background: #4964c5;
     padding: 10px 5px 5px 5px;
     text-align: center;
     font-size: 12px;
@@ -153,4 +154,8 @@
 .primary-menu:hover {
     color: black;
     background: #fad7c2;
+}
+
+.fa-2x {
+    font-size: 1.5em;
 }

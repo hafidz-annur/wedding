@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style-newest3.css">
+    <link rel="stylesheet" href="css/style-newest4.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -33,9 +33,9 @@
         }
 
         .menu-bottom {
-            width: 470px;
+            width: 450px;
             position: fixed;
-            margin: -10px -10px -1px -10px;
+            margin: -10px 0px -1px 0px;
             bottom: 0;
             z-index: 999;
         }
@@ -71,7 +71,19 @@
                 <img src="bg-flower/mobile/2-bg.png" class="bg bg4">
             </div>
             <div id="couple">
-                <div class="row" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-12 align-self-center">
+                        <div class="card countdown mb-4" data-aos="fade-up">
+                            <div class="card-body text-center text-countdown" data-aos="zoom-in">
+                                <span class="time" id="day"></span> :
+                                <span class="time" id="hour"></span> :
+                                <span class="time" id="minute"></span> :
+                                <span class="time" id="second"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5" data-aos="fade-up">
                     <div class="col-md-12 text-center">
                         <h4>
                             بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْ
@@ -107,20 +119,10 @@
             <div id="event">
                 <div class="row">
                     <h1 class="h1-title text-center mb-3" data-aos="fade-up">Acara</h1>
-                    <div class="col-md-12 align-self-center">
-                        <div class="card countdown mb-4" data-aos="fade-up">
-                            <div class="card-body text-center text-countdown" data-aos="zoom-in">
-                                <span class="time" id="day"></span> :
-                                <span class="time" id="hour"></span> :
-                                <span class="time" id="minute"></span> :
-                                <span class="time" id="second"></span>
-                            </div>
-                        </div>
+                    <div class="col-md-12">
                         <div class="img-event" data-aos="fade-up">
                             <img src="img/photo/hi.png" width="100%">
                         </div>
-                    </div>
-                    <div class="col-md-12">
                         <div class="card mb-4 shadow card-1">
                             <div class="card-header">
                                 <h3 class="mt-2" style="display:inline; float: left;">Akad Nikah</h3>
@@ -310,7 +312,7 @@
                     Terima Kasih Atas Doa Restunya
                 </p>
             </div>
-            <div class="menu-bottom shadow">
+            <div class="menu-bottom">
                 <div class="row">
                     <div class="col primary-menu" onclick="location.href='#home';">
                         <div class="icon-menu">
