@@ -1,5 +1,4 @@
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
         body {
             font-family: 'Nunito', sans-serif;
             letter-spacing: 1.1px;
@@ -110,26 +109,26 @@
 
         #event {
             position: relative;
-            height:auto;
+            height: auto;
             background: url("../bg-flower/bg-couple.png");
             background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;
-            padding : 100px 200px 70px 200px;
+            padding: 100px 200px 70px 200px;
         }
 
         .card-1 {
-            border-radius:15px 75px; 
+            border-radius: 15px 75px;
             background: rgb(255, 255, 255);
-            border:0px;
+            border: 0px;
             -webkit-mask-image: url("../img/grit.png");
             mask-image: url("../img/grit.png");
         }
 
         .card-2 {
-            border-radius:75px 15px; 
+            border-radius: 75px 15px;
             background: rgb(255, 255, 255);
-            border:0px;
+            border: 0px;
             -webkit-mask-image: url("../img/grit.png");
             mask-image: url("../img/grit.png");
         }
@@ -211,7 +210,7 @@
 
         #ucapans {
             height: 100%;
-            z-index:2;
+            z-index: 2;
             padding: 30px 100px;
             position: relative;
             -webkit-mask-image: url("../img/grit.png");
@@ -249,7 +248,6 @@
             p {
                 font-size: 16px;
             }
-
             #home {
                 height: 640px;
                 background: url("../bg-flower/mobile/1-bg.png");
@@ -257,46 +255,38 @@
                 background-size: cover;
                 background-position: top;
             }
-
             #home .bg {
                 width: 100%;
                 position: absolute;
                 background-size: cover;
             }
-
             .bg-desktop {
                 display: none;
             }
-
             .bg-mobile {
                 display: block;
             }
-
             .home-col {
                 margin-top: 60%;
                 margin-left: 10px;
             }
-
             .home-title {
                 font-family: 'Parisienne', cursive;
                 font-weight: 500;
                 text-shadow: 1px 1px gray;
                 font-size: 45px
             }
-
             .home-couple {
                 font-family: 'Parisienne', cursive;
                 font-weight: 500;
                 text-shadow: 1px 1px gray;
                 font-size: 30px;
             }
-
             .home-date {
                 margin-top: 30px;
                 font-size: 15px;
                 font-weight: 100;
             }
-
             #couple {
                 height: 100%;
                 background-size: cover;
@@ -306,101 +296,81 @@
                 z-index: 2;
                 padding: 50px 10px;
             }
-
             .doa-title {
                 width: 55%;
             }
-
             .couple1-mobile {
                 text-align: center;
                 width: 100%;
-                padding:0 50px;
-                margin:-20px 0;
+                padding: 0 50px;
+                margin: -20px 0;
             }
-
             .couple-title {
                 margin-top: 20px;
             }
-
             #couple h3 {
                 font-size: 25px;
                 font-family: 'Dancing Script', cursive;
             }
-
             #couple h5 {
                 font-size: 20px;
                 font-family: 'Parisienne', cursive;
             }
-
             #event {
                 height: 100vh;
-                padding : 70px 10px;
+                padding: 70px 10px;
             }
-
             body {
                 max-width: 100%;
             }
-
             #event {
                 background-size: cover;
                 background-repeat: no-repeat;
                 height: 100%;
             }
-
-            .card-1,
-            .card-2 {
+            .card-1, .card-2 {
                 border-radius: 10px;
             }
-
             #event .bg {
                 position: relative;
             }
-
             .couple2-mobile {
                 width: 100%;
                 padding: 0 70px;
                 margin-bottom: -20px;
                 margin-top: -30px;
             }
-
             .countdown {
                 position: relative;
                 margin-top: 5px;
             }
-
             .mobile-center {
                 text-align: center;
             }
-
             .mobile-center img {
                 width: 100px;
             }
-
             #doa {
                 padding: 50px 15px 50px 15px;
                 text-align: center;
             }
-
             #maps {
                 height: 100%;
                 max-width: 100%;
                 padding: 50px 10px 100px 10px;
             }
-
             #ucapans {
                 height: 100%;
                 padding: 10px;
                 padding-top: 20px;
                 padding-bottom: 50px;
             }
-
             .list-ucapan {
                 margin-top: 20px;
                 height: 430px;
                 overflow-x: hidden;
                 border: 0px;
             }
-
             .img-ucapan {
                 width: 15%;
             }
@@ -466,22 +436,24 @@
 
         .custom-shape-divider-bottom-1612657513 .shape-fill {
             fill: #FFFFFF;
-}
+        }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .custom-shape-divider-bottom-1612657513 svg {
-        width: calc(217% + 1.3px);
-        height: 61px;
-    }
-}
         /** For mobile devices **/
+
+        @media (max-width: 767px) {
+            .custom-shape-divider-bottom-1612657513 svg {
+                width: calc(217% + 1.3px);
+                height: 61px;
+            }
+        }
+
+        /** For mobile devices **/
+
         @media (max-width: 767px) {
             .custom-shape-divider-bottom-1611758739 svg {
                 width: calc(139% + 1.3px);
                 height: 53px;
             }
-
             .custom-shape-divider-bottom-1611758739 {
                 bottom: -52px;
             }
