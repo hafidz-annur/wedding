@@ -59,7 +59,19 @@
 
 <body>
     <div class="container-fluid">
-        <div class="mobile-container">
+        <!-- musik -->
+        <audio id="playAudio">
+            <source src="sound/instrument.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="audio-button">
+            <button onclick="playAudio()" type="button" class="btn btn-primary btn-circle shadow" id="playButton"><i
+                    class="fa fa-volume-mute"></i></button>
+            <button onclick="stopAudio()" type="button" class="btn btn-danger btn-circle shadow" id="stopButton"><i
+                    class="fa fa-volume-up"></i></button>
+        </div>
+        <div class="mobile-container" id="content">
             <div id="home" data-aos="fade-up">
                 <div class="row">
                     <div class="col position-absolute text-center home-col animate__animated animate__fadeInUp animate__delay-2s"
@@ -127,7 +139,7 @@
                         <div class="img-event" data-aos="fade-up">
                             <img src="img/photo/hi.png" width="100%">
                         </div>
-                        <div class="card mb-4 shadow card-1">
+                        <div class="card mb-4 card-1">
                             <div class="card-header">
                                 <h3 class="mt-2" style="display:inline; float: left;">Akad Nikah</h3>
                                 <img src="img/ring.png" width="10%" style="display:inline; float: right;">
@@ -169,7 +181,7 @@
 
                     </div>
                     <div class="col-md-12" data-aos="fade-up">
-                        <div class="card mb-4 shadow card-1">
+                        <div class="card mb-4 card-1">
                             <div class="card-header">
                                 <h3 class="mt-2" style="display:inline; float: left;">Resepsi</h3>
                                 <img src="img/celeberate.png" width="10%" style="display:inline; float: right;">
@@ -295,10 +307,16 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/header1.png" class="d-block w-100" alt="...">
+                            <img src="img/photo/p-2.jpeg" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/header2.png" class="d-block w-100" alt="...">
+                            <img src="img/photo/p-3.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/photo/p-1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/photo/p-4.jpeg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -330,7 +348,7 @@
                         </div>
                         Acara
                     </div>
-                    <div class="col primary-menu" onclick="location.href='#ucapans';">
+                    <div class="col primary-menu active" onclick="location.href='#ucapans';">
                         <div class="icon-menu">
                             <i class="fas fa-feather fa-2x"></i>
                         </div>
@@ -348,6 +366,47 @@
                         </div>
                         Galeri
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buka Undangan Modal -->
+    <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered animate__animated animate__zoomIn" role="document">
+            <div class="modal-content p-3 text-center">
+                <h2 class="mt-4 welcome-title">The Wedding of</h2>
+                <h2 class="welcome-name">Hafidz & Ismi</h2>
+                <div class="welcome">
+                    <img src="img/photo/hi.png" class="welcome-img">
+                    <img src=" img/photo/bg.png" class="welcome-bg">
+                </div>
+                <div class="card shadow" style="z-index: 3;">
+                    <div class="card-body">
+                        Kepada Yth: Bp/Ibu/Sdr/i :
+                        <h5 id="name"></h5>
+                    </div>
+                </div>
+                <button class="btn btn-dark btn-sm mt-2 mb-4" data-dismiss="modal" id="bukaTombol"
+                    style="z-index: 3; background: #a58782; border:none;">
+                    Buka Undangan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert  -->
+    <div class="modal fade" id="alertMsg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="alert">
+
                 </div>
             </div>
         </div>
@@ -415,31 +474,32 @@
             $(".welcome-img").fadeIn(4000);;
         });
 
-        // $("#bukaTombol").click(function () {
-        //     $("#content").fadeIn(3000);
-        //     var x = document.getElementById("playAudio");
-        //     var y = document.getElementById("playButton");
-        //     var z = document.getElementById("stopButton");
-        //     x.play();
-        //     y.style.display = "none";
-        //     z.style.display = "block";
-        // });
+        $("#bukaTombol").click(function () {
+            $("#content").fadeIn(3000);
+            $('#bukaUndangan').modal("hide")
+            var x = document.getElementById("playAudio");
+            var y = document.getElementById("playButton");
+            var z = document.getElementById("stopButton");
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        });
 
-        // var x = document.getElementById("playAudio");
-        // var y = document.getElementById("playButton");
-        // var z = document.getElementById("stopButton");
-        // z.style.display = "none";
-        // function playAudio() {
-        //     x.play();
-        //     y.style.display = "none";
-        //     z.style.display = "block";
-        // }
+        var x = document.getElementById("playAudio");
+        var y = document.getElementById("playButton");
+        var z = document.getElementById("stopButton");
+        z.style.display = "none";
+        function playAudio() {
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        }
 
-        // function stopAudio() {
-        //     x.pause();
-        //     y.style.display = "block";
-        //     z.style.display = "none";
-        // }
+        function stopAudio() {
+            x.pause();
+            y.style.display = "block";
+            z.style.display = "none";
+        }
 
         $("#akad").click(function () {
             $("#maps-akad").fadeIn("slow");
