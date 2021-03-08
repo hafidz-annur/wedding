@@ -3,7 +3,7 @@
 #home {
     margin: -10px;
     height: 100vh;
-    background: url("../bg-flower/mobile/1-bg.png");
+    background: url("../bg-flower/bg-flowers-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -23,9 +23,28 @@
     display: block;
 }
 
+.welcome-col {
+    padding: 45% 10px;
+    margin-left: 0px;
+}
+
+.welcome-title {
+    font-family: 'Satisfy', cursive;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+    font-size: 45px
+}
+
+.welcome-couple {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+    font-size: 30px;
+}
+
 .home-col {
-    margin-top: 45%;
-    margin-left: 10px;
+    padding: 50px 10px 60px 10px;
+    margin-left: 0px;
 }
 
 .home-title {
@@ -48,33 +67,50 @@
     font-weight: 100;
 }
 
+.home-header {
+    margin: -10px;
+    background: url('../bg-flower/bg-headers.png');
+    height: 30vh;
+    /* background-attachment: fixed; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 0px 10px 20px 10px;
+}
+
+.page-header {
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
 #couple {
     height: auto;
-    margin: -10px;
+    margin-top: -5%;
+    border-radius: 20px;
     background-color: #ffffff;
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
-    padding: 50px 10px;
+    padding: 50px 10px 100px 10px;
 }
 
 #event {
     position: relative;
-    border-radius: 30px 30px 0 0;
+    border-radius: 20px;
     height: auto;
     padding: 0 10px;
-    margin: -10px;
+    margin-top: -5%;
     padding: 50px 10px;
     z-index: 3;
-    background-color: #91EBEF;
+    background-color: #ffffff;
 }
 
 .countdown {
     background: #4964c5;
     border-radius: 10px;
     padding: 0;
-    margin-top: -25%;
+    margin-top: -5%;
     letter-spacing: 3px;
 }
 
@@ -90,8 +126,9 @@
 }
 
 #doa {
-    background: rgb(255, 255, 255);
-    padding: 50px 10px;
+    background: #4964c5;
+    color: white;
+    padding: 50px 20px 100px 20px;
     text-align: center;
     margin-top: -20px;
     margin: -10px;
@@ -101,16 +138,19 @@
 #maps {
     position: relative;
     border-radius: 30px 30px 0 0;
-    background-color: #F2D9CD;
-    padding: 50px 10px;
-    margin: -10px;
-    z-index: 5;
+    background-color: #fff;
+    padding: 50px 10px 100px 10px;
+    margin-top: -20px;
+    z-index: 2;
 }
 
 #ucapans {
-    height: 100%;
+    background: #fff;
+    height: auto;
+    border-radius: 20px;
     z-index: 2;
-    padding: 50px 10px;
+    margin-top: -20px;
+    padding: 50px 10px 100px 10px;
     position: relative;
 }
 
@@ -145,9 +185,12 @@
 
 #gallery {
     height: auto;
-    margin: -10px;
-    background-color: #C7E6EB;
+    margin-top: -20px;
+    border-radius: 20px;
+    background-color: #fff;
     padding: 50px 10px 100px 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .primary-menu {
@@ -159,10 +202,20 @@
     font-size: 12px;
 }
 
-.primary-menu:hover, .active {
+.primary-menu:hover {
     color: black;
-    background: #91ebef;
     border-radius: 5px;
+}
+
+.primary-menu.active {
+    color: rgb(26, 26, 26);
+    background: #ffffff;
+    border-radius: 100px;
+}
+
+.fa-3x {
+    padding-top: 2px;
+    font-size: 2.5em;
 }
 
 .fa-2x {
@@ -204,4 +257,21 @@
     padding-left: 12px;
     background: rgb(218, 205, 136);
     border: 1px gold;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 0px) {
+    .home-header {
+        margin: -10px;
+        margin-bottom: -45px;
+        background: url('../bg-flower/bg-headers.png');
+        height: 35vh;
+        background-attachment: fixed;
+        background-size: 130%;
+        background-repeat: no-repeat;
+        padding-top: 10px 10px 20px 10px;
+    }
+    .home-col {
+        padding: 60px 10px 60px 10px;
+        margin-left: 0px;
+    }
 }
