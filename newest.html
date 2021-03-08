@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style-newest4.css">
+    <link rel="stylesheet" href="css/style-newest5.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -373,8 +373,37 @@
 
     <!-- Buka Undangan Modal -->
     <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered animate__animated animate__zoomIn" role="document">
-            <div class="modal-content p-3 text-center">
+        <div class="modal-dialog animate__animated animate__zoomIn" role="document">
+            <div class="modal-content mobile-container">
+                <div id="home" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col position-absolute text-center home-col animate__animated animate__fadeInUp animate__delay-2s"
+                            style="z-index: 2;" id="title">
+                            <h1 class="home-title">The Wedding of</h1>
+                            <h1 class="home-couple">Hafidz & Ismi</h1>
+                            <h5 class="home-date">- Sunday, July, 25st 2021 -</h5>
+                            <div class="px-4">
+                                <div class="card shadow mt-3" style="z-index: 3;">
+                                    <div class="card-body">
+                                        Kepada Yth: Bp/Ibu/Sdr/i :
+                                        <h5 id="name"></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-dark btn-sm mt-3 mb-4" data-dismiss="modal" id="bukaTombol"
+                                style="z-index: 3; background: #a58782; border:none;">
+                                Buka Undangan
+                            </button>
+                        </div>
+                    </div>
+                    <img src="bg-flower/mobile/5-bg.png" class="bg">
+                    <img src=" bg-flower/mobile/4-bg.png" class="bg">
+                    <img src="bg-flower/mobile/3-bg.png" class="bg">
+                    <img src="bg-flower/mobile/2-bg.png" class="bg">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="modal-content p-3 text-center">
                 <h2 class="mt-4 welcome-title">The Wedding of</h2>
                 <h2 class="welcome-name">Hafidz & Ismi</h2>
                 <div class="welcome">
@@ -391,8 +420,7 @@
                     style="z-index: 3; background: #a58782; border:none;">
                     Buka Undangan
                 </button>
-            </div>
-        </div>
+            </div> -->
     </div>
 
     <!-- Alert  -->
