@@ -198,8 +198,8 @@
 }
 
 .primary-menu:hover {
-    color: rgb(255, 255, 255);
-    background: #533938;
+    background: #ffffff;
+    border-radius: 5px;
 }
 
 .fa-2x {
