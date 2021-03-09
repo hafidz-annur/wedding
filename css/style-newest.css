@@ -25,7 +25,7 @@
 
 .welcome-col {
     padding: 45% 10px;
-    margin-left: 0px;
+    margin-left: 10px;
 }
 
 .welcome-title {
@@ -192,7 +192,7 @@
     color: #533938;
     cursor: pointer;
     /* background: #4964c5; */
-    padding: 10px 5px 10px 5px;
+    padding: 15px 5px 15px 5px;
     text-align: center;
     font-size: 12px;
 }
@@ -202,13 +202,8 @@
     background: #533938;
 }
 
-.fa-3x {
-    padding-top: 2px;
-    font-size: 2.5em;
-}
-
 .fa-2x {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .welcome {
@@ -217,7 +212,10 @@
 }
 
 .welcome-img {
+    position: relative;
     width: 80%;
+    margin-top: -60%;
+    z-index: -1;
 }
 
 .welcome-bg {
