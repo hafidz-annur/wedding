@@ -85,9 +85,8 @@
 
 #couple {
     height: auto;
-    margin-top: -5%;
+    margin-top: 0%;
     border-radius: 20px;
-    background-color: #ffffff;
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -107,10 +106,10 @@
 }
 
 .countdown {
-    background: #4964c5;
+    background: #533938;
     border-radius: 10px;
     padding: 0;
-    margin-top: -5%;
+    margin-top: -10%;
     letter-spacing: 3px;
 }
 

@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style-newest.css">
+    <link rel="stylesheet" href="css/style-newest6.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -34,13 +34,50 @@
 
         .menu-bottom {
             border-radius: 20px;
-            background: #4964c5;
+            background: #533938;
             width: 450px;
             position: fixed;
             margin-bottom: 5px;
             margin-left: 0px;
             bottom: 0;
             z-index: 999;
+        }
+
+        .top-corner {
+            position: absolute;
+            width: 25%;
+            margin-left: -20px;
+            margin-top: -10px;
+            z-index: 999;
+        }
+
+        .bot-corner {
+            display: none;
+        }
+
+        .card-wedding {
+            background: url('img/bg.png');
+            background-color: antiquewhite;
+            border: 4px solid #918354;
+            margin-top: 10px;
+            border-radius: 20px;
+            margin-bottom: 20%;
+        }
+
+        .frame-col {
+            text-align: center;
+            width: 100%;
+            padding: 19% 10% 0 10%;
+        }
+
+        .frame-text {
+            position: absolute;
+            left: 40%;
+            top: 28%;
+        }
+
+        .frame {
+            width: 100%;
         }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
@@ -52,6 +89,23 @@
             .menu-bottom {
                 width: 97%;
                 margin-left: -7px;
+            }
+
+            .top-corner {
+                position: absolute;
+                width: 70%;
+                margin-left: -20px;
+                margin-top: -10px;
+                z-index: 999;
+            }
+
+            .bot-corner {
+                display: block;
+                position: absolute;
+                width: 70%;
+                margin-top: -55%;
+                right: 0;
+                z-index: 999;
             }
         }
     </style>
@@ -72,15 +126,15 @@
                     class="fa fa-volume-up"></i></button>
         </div>
         <div class="mobile-container" id="content">
-            <div id="home-page">
-                <div class="page-header">
-                    <div class="home-header">
-                        <div class="text-center home-col animate__animated animate__zoomIn" style="z-index: 2;"
-                            id="title">
-                            <h1 class="home-title">The Wedding of</h1>
-                            <h1 class="home-couple">Hafidz & Ismi</h1>
-                        </div>
+            <div class="card-wedding" id="home-page">
+                <img src="img/photo/corner.png" class="top-corner">
+                <div class="frame-col">
+                    <div class="frame-text">
+                        <h1>Hafidz</h1>
+                        &
+                        <h1>Ismi</h1>
                     </div>
+                    <img src="img/frame.png" class="frame">
                 </div>
                 <div id="couple">
                     <div class="row">
@@ -128,8 +182,9 @@
                         </div>
                     </div>
                 </div>
+                <img src="img/photo/bot-corner.png" class="bot-corner">
             </div>
-            <div id="event-page">
+            <div class="card-wedding" id="event-page">
                 <div class="page-header">
                     <div class="home-header">
                         <div class="text-center home-col animate__animated animate__zoomIn" style="z-index: 2;"
@@ -407,7 +462,7 @@
     </div>
 
     <!-- Buka Undangan Modal -->
-    <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static">
+    <!-- <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static">
         <div class="modal-dialog animate__animated animate__zoomIn" role="document">
             <div class="modal-content mobile-container">
                 <div id="home" data-aos="fade-up">
@@ -434,7 +489,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Alert  -->
     <!-- <div class="modal fade" id="alertMsg" tabindex="-1" role="dialog" aria-hidden="true">
