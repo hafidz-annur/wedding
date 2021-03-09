@@ -3,7 +3,7 @@
 #home {
     margin: -10px;
     height: 100vh;
-    background: url("../bg-flower/bg-flowers-mobile.png");
+    background: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -234,7 +234,7 @@
 }
 
 .modal {
-    background: #ffffff;
+    background: url('../img/bg-grit.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
