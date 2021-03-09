@@ -106,15 +106,15 @@
 }
 
 .countdown {
-    background: #533938;
+    background: rgba(255, 255, 255, 0);
     border-radius: 10px;
     padding: 0;
-    margin-top: -10%;
+    margin-top: -20%;
     letter-spacing: 3px;
 }
 
 .text-countdown span {
-    color: white;
+    color: #533938;
     font-size: 35px;
     font-family: 'Big Shoulders Inline Display', cursive;
     font-weight: bold;
@@ -193,7 +193,7 @@
 }
 
 .primary-menu {
-    color: white;
+    color: #533938;
     cursor: pointer;
     /* background: #4964c5; */
     padding: 10px 5px 5px 5px;
