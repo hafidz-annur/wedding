@@ -102,7 +102,6 @@
     margin-top: -5%;
     padding: 50px 10px;
     z-index: 3;
-    background-color: #ffffff;
 }
 
 .countdown {
@@ -121,7 +120,7 @@
 }
 
 .img-event {
-    padding: 0 20%;
+    padding: 0 10%;
 }
 
 #doa {

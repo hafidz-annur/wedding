@@ -20,13 +20,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style-newest6.css">
+    <link rel="stylesheet" href="css/style-newest7.css">
     <style>
         html {
             scroll-behavior: smooth;
         }
 
         body {
+            background: url('img/bg-grit.png');
             font-size: 14px;
             color: #2c2c2a;
         }
@@ -82,6 +83,25 @@
 
         .frame {
             width: 100%;
+        }
+
+        .page-title {
+            font-family: 'Satisfy', cursive;
+        }
+
+        .btn-wedding {
+            padding: 5px 20px;
+            border: 2px solid #918354;
+            text-decoration: none;
+            border-radius: 15px;
+            color: #533938;
+            font-size: 20px;
+        }
+
+        .btn-wedding:hover {
+            border: 2px solid #533938;
+            background: #533938;
+            color: white;
         }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
@@ -188,17 +208,11 @@
                 <img src="img/photo/bot-corner.png" class="bot-corner">
             </div>
             <div class="card-wedding" id="event-page">
-                <div class="page-header">
-                    <div class="home-header">
-                        <div class="text-center home-col animate__animated animate__zoomIn" style="z-index: 2;"
-                            id="title">
-                            <h1 class="home-title pt-3">Acara</h1>
-                        </div>
-                    </div>
-                </div>
+                <img src="img/photo/corner.png" class="top-corner">
                 <div id="event">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 text-center">
+                            <h3 class="page-title pt-3">Acara</h3>
                             <div class="img-event">
                                 <img src="img/photo/hi.png" width="100%">
                             </div>
@@ -287,33 +301,36 @@
                             </div>
 
                         </div>
-                        <div class="col-md-12 mt-5 text-center">
-                            <a href="#" class="btn btn-light shadow">
+                        <div class="col-md-12 mt-2 text-center">
+                            <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N2Q4MWN1cW1tOGFicXA1Nmk0ZHJ2azNuOHUgaGFmaWR6LmJkdEBt&tmsrc=hafidz.bdt%40gmail.com"
+                                target="_blank" class="btn-wedding">
                                 <i class="far fa-calendar-check"></i> &nbsp; SaveTheDate
                             </a>
                         </div>
                     </div>
+                    <div class="mt-5 text-center">
+                        <span>
+                            وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا إِلَيْهَا
+                            وَجَعَلَ
+                            بَيْنَكُم
+                            مَّوَدَّةً
+                            وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+                            <br>
+                            <br>
+                            “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari
+                            jenismu
+                            sendiri,
+                            supaya kamu
+                            cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang.
+                            Sesungguhnya
+                            pada yang
+                            demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir”
+                            <br><br>
+                            <i>(QS. Ar-Ruum 30 : 21)</i>
+                        </span>
+                    </div>
                 </div>
-                <div id="doa">
-                    <span data-aos="fade-up">
-                        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ
-                        بَيْنَكُم
-                        مَّوَدَّةً
-                        وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
-                        <br>
-                        <br>
-                        “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari
-                        jenismu
-                        sendiri,
-                        supaya kamu
-                        cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang.
-                        Sesungguhnya
-                        pada yang
-                        demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir”
-                        <br><br>
-                        <i>(QS. Ar-Ruum 30 : 21)</i>
-                    </span>
-                </div>
+                <img src="img/photo/bot-corner.png" class="bot-corner">
             </div>
             <div id="maps-page">
                 <div class="page-header">
