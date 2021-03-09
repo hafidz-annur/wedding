@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <title>The Wedding of Hafidz & Ismi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="The Wedding of Hafidz & Ismi">
+    <meta property="og:url" content="https://hafidz-annur.github.io/wedding/?n=Tamu-Undangan">
+    <meta name="description" content="">
+    <meta property="og:image" content="https://hafidz-annur.github.io/wedding/img/photo/p-4.jpeg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -20,7 +24,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style-newest7.css">
+    <link rel="stylesheet" href="css/style-newest9.css">
     <style>
         html {
             scroll-behavior: smooth;
@@ -39,13 +43,12 @@
         }
 
         .menu-bottom {
-            border-radius: 5px;
-            border: 2px solid #bdaf92;
-            background: #bdaf92;
-            width: 450px;
+            border: 2px solid #d6ccb6;
+            background: url('img/bg-grit.png');
+            width: 460px;
             position: fixed;
-            margin-bottom: 5px;
-            margin-left: 0px;
+            margin-bottom: 0px;
+            margin: -5px;
             bottom: 0;
             z-index: 999;
         }
@@ -103,6 +106,25 @@
             border: 2px solid #533938;
             background: #533938;
             color: white;
+        }
+
+        .gallery-col {
+            width: 50%;
+            height: 100%;
+        }
+
+        .gallery-img {
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            transition: .2s;
+            width: 100%;
+        }
+
+        .gallery-img:hover {
+            -webkit-filter: grayscale(0%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
         }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
@@ -212,8 +234,8 @@
                 <img src="img/photo/corner.png" class="top-corner">
                 <div id="event">
                     <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h3 class="page-title pt-3">Acara</h3>
+                        <div class="col-md-12">
+                            <h3 class="page-title pt-3 text-center">Acara</h3>
                             <div class="img-event">
                                 <img src="img/photo/hi.png" width="100%">
                             </div>
@@ -310,6 +332,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="mt-1 mb-4 px-4 text-center">
+                    <span>
+                        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا
+                        إِلَيْهَا
+                        وَجَعَلَ
+                        بَيْنَكُم
+                        مَّوَدَّةً
+                        وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+                        <br>
+                        <br>
+                        “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri
+                        dari
+                        jenismu
+                        sendiri,
+                        supaya kamu
+                        cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
+                        sayang.
+                        Sesungguhnya
+                        pada yang
+                        demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir”
+                        <br><br>
+                        <i>(QS. Ar-Ruum 30 : 21)</i>
+                    </span>
+                </div>
                 <img src="img/photo/bot-corner.png" class="bot-corner">
             </div>
             <div class="card-wedding" id="maps-page">
@@ -318,37 +364,13 @@
                     <div class="row">
                         <div class="col-12 text-center">
                             <h3 class="page-title pt-4">Denah</h3>
-                            <div class="mt-3 mb-4 px-4 text-center">
-                                <span>
-                                    وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا
-                                    إِلَيْهَا
-                                    وَجَعَلَ
-                                    بَيْنَكُم
-                                    مَّوَدَّةً
-                                    وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
-                                    <br>
-                                    <br>
-                                    “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri
-                                    dari
-                                    jenismu
-                                    sendiri,
-                                    supaya kamu
-                                    cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
-                                    sayang.
-                                    Sesungguhnya
-                                    pada yang
-                                    demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir”
-                                    <br><br>
-                                    <i>(QS. Ar-Ruum 30 : 21)</i>
-                                </span>
-                            </div>
                         </div>
                         <div class="btn-group" role="group">
                             <button type="button" class="btn btn-outline-dark" id="akad">Akad Nikah</button>
                             <button type="button" class="btn btn-outline-dark" id="resepsi">Resepsi</button>
                         </div>
                     </div>
-                    <div id="maps-akad" class="mt-1">
+                    <div id="maps-akad" class="mt-3">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15820.238919042295!2d110.84510227707707!3d-7.568467412670967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16552309b4a5%3A0x5027a76e356c7c0!2sPucangsawit%2C%20Jebres%2C%20Surakarta%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1612356514664!5m2!1sen!2sid"
                             width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
@@ -402,33 +424,21 @@
                             <h3 class="mb-4 page-title pt-3 px-3">Galeri</h3>
                         </div>
                     </div>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/photo/p-2.jpeg" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/photo/p-3.jpeg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/photo/p-1.jpeg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/photo/p-4.jpeg" class="d-block w-100" alt="...">
-                            </div>
+                    <div class="row g-0 px-5">
+                        <div class="col-6 gallery-col">
+                            <img src="img/photo/p-5.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-1.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-7.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-4.jpeg" class="gallery-img" onclick="onClick(this)">
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class=" col-6 gallery-col">
+                            <img src="img/photo/p-2.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-8.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-3.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-6.jpeg" class="gallery-img" onclick="onClick(this)">
+                        </div>
                     </div>
-                    <p class="text-center mt-4">
+                    <p class=" text-center mt-4">
                         Terima Kasih Atas Doa Restunya
                     </p>
                 </div>
@@ -440,31 +450,41 @@
                         <div class="icon-menu">
                             <i class="fas fa-house-user fa-2x"></i>
                         </div>
-                        Home
                     </div>
                     <div class="col primary-menu" id="event-button">
                         <div class="icon-menu">
                             <i class="far fa-calendar-check fa-2x"></i>
                         </div>
-                        Acara
                     </div>
-                    <div class="col primary-menu active" id="say-button">
+                    <div class="col primary-menu" id="say-button">
                         <div class="icon-menu">
-                            <i class="fas fa-plus fa-3x"></i>
+                            <i class="far fa-clipboard fa-2x"></i>
                         </div>
                     </div>
                     <div class="col primary-menu" id="maps-button">
                         <div class="icon-menu">
                             <i class="fas fa-map-marked-alt fa-2x"></i>
                         </div>
-                        Denah
                     </div>
                     <div class="col primary-menu" id="gallery-button">
                         <div class="icon-menu">
                             <i class="fas fa-photo-video fa-2x"></i>
                         </div>
-                        Galeri
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="modal" style="padding-top:0" data-backdrop="static" onclick="this.style.display='none'">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img id="img01" class="w3-image" style="width: 100%;">
+                    <button type="button" class="mt-2 btn-wedding close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -501,21 +521,21 @@
     </div>
 
     <!-- Alert  -->
-    <!-- <div class=" modal fade" id="alertMsg" tabindex="-1" role="dialog" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="alertTitle">Modal title</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body" id="alert">
+    <div class=" modal fade" id="alertMsg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="alert">
 
-                                        </div>
-                                    </div>
-                                </div>
-                        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
@@ -530,6 +550,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!-- Countdown timer  -->
     <script>
         // Set the date we're counting down to
@@ -643,6 +664,13 @@
             $("#gallery-page").fadeIn();
         })
 
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
 
 
         var x = document.getElementById("playAudio");
