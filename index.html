@@ -625,6 +625,8 @@
     <script>
         $(document).ready(function () {
             AOS.init();
+            var x = document.getElementById("playAudio");
+            x.play();
             $('#waiting').show();
             setTimeout(function () {
                 $('#waiting').fadeOut(2000);
