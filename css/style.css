@@ -261,4 +261,7 @@
         padding: 60px 10px 60px 10px;
         margin-left: 0px;
     }
+    .welcome-col {
+        margin-top: -30px;
+    }
 }
