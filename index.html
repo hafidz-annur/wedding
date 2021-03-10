@@ -55,6 +55,10 @@
             margin-top: -10px;
         }
 
+        .modal-content {
+            border: none !important;
+        }
+
         .menu-bottom {
             border: 2px solid #d6ccb6;
             background: url('img/bg-grit.png');
@@ -149,7 +153,14 @@
 
         .form-control {
             border: 2px solid #918354;
-            border-radius: 10px;
+            border-radius: 3px;
+            font-size: 13px;
+        }
+
+        .primary-menu:hover {
+            box-shadow: 1px 1px;
+            background: #c9c2af;
+            border-radius: 5px;
         }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
@@ -187,8 +198,7 @@
     <div class="container-fluid">
         <!-- musik -->
         <audio id="playAudio" loop>
-            <source src="https://lss.ijjiii.is/38cbb76cdf3f32f658c1fc80cc4cbc80/-PZn5XCvYuY/csewewiuwus">
-            <!-- <source src="sound/instrument.mp3"> -->
+            <source src="sound/instrument.mp3">
         </audio>
 
         <div class="audio-button">
@@ -237,17 +247,30 @@
                         <div class="col-12 text-center">
                             <img src="img/photo/hafidz-annur-fanany.png" width=50%" data-aos="zoom-in">
                             <div data-aos="fade-up">
-                                <h3>Hafidz Annur Fanany</h3>
-                                <h6>Putra Bapak Agus Supriyanto & Ibu Hartini
-                                </h6>
+                                <h3>Hafidz Annur Fanany, S.Kom</h3>
+                                <p>Putra dari<br>
+                                    Bpk. Agus Supriyanto & Ibu. Hartini
+                                </p>
+                                <i class="fas fa-map-marker-alt"></i><br>
+                                <small>
+                                    Pucangsawit RT.04 RW.07<br>
+                                    Jebres, Kota Surakarta
+                                </small>
                             </div>
                         </div>
                         <h4 class="text-center mt-5 mb-5" data-aos="zoom-in">Dengan</h4>
                         <div class="col-12 text-center">
                             <img src="img/photo/ismi-nur-aini.png" width=50%" data-aos="zoom-in">
                             <div data-aos="fade-up">
-                                <h3>Ismi Nur Aini</h3>
-                                <h6>Putri Bapak Supardi & Ibu Waris</h6>
+                                <h3>Ismi Nur Aini, S.Kom</h3>
+                                <p>Putri dari<br>
+                                    Bpk. Supardi & Ibu. Waris
+                                </p>
+                                <i class="fas fa-map-marker-alt"></i><br>
+                                <small>
+                                    Ledok RT.20 RW.07<br>
+                                    Karangpelem, Kedawung, Kab. Sragen
+                                </small>
                             </div>
                         </div>
                     </div>
@@ -274,7 +297,7 @@
                                             <table class="text-left">
                                                 <tr>
                                                     <td><i class="far fa-clock fa-fw"></i></td>
-                                                    <td>Pukul 00:00 WIB</td>
+                                                    <td>Pukul 08:00 WIB</td>
                                                 </tr>
                                                 <tr>
                                                     <td valign="top">
@@ -292,9 +315,7 @@
                                                     </td>
                                                     <td>
                                                         <small>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Eius
-                                                            consequuntur
+                                                            Ledok RT.20 RW.07 Karangpelem, Kedawung, Kab. Sragen
                                                         </small>
                                                     </td>
                                                 </tr>
@@ -308,7 +329,7 @@
                         <div class="col-md-12">
                             <div class="card mb-4 card-1">
                                 <div class="card-header">
-                                    <h3 class="mt-2" style="display:inline; float: left;">Resepsi</h3>
+                                    <h3 class="mt-2" style="display:inline; float: left;">Ngunduh Temanten</h3>
                                     <img src="img/celeberate.png" width="10%" style="display:inline; float: right;">
                                 </div>
                                 <div class="card-body">
@@ -324,7 +345,7 @@
                                                         <i class="far fa-calendar-alt fa-fw"></i>
                                                     </td>
                                                     <td>
-                                                        Minggu, 25 Maret 2021
+                                                        Ahad, 25 Maret 2021
                                                         <hr style="margin:10px 0px;">
                                                     </td>
                                                 </tr>
@@ -335,9 +356,7 @@
                                                     </td>
                                                     <td>
                                                         <small>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Eius
-                                                            consequuntur
+                                                            Pucangsawit RT.04 RW.07 Jebres Kota Surakarta
                                                         </small>
                                                     </td>
                                                 </tr>
@@ -391,7 +410,7 @@
                         </div>
                         <div class="btn-group" role="group">
                             <button type="button" class="btn btn-outline-dark" id="akad">Akad Nikah</button>
-                            <button type="button" class="btn btn-outline-dark" id="resepsi">Resepsi</button>
+                            <button type="button" class="btn btn-outline-dark" id="resepsi">Ngunduh Temanten</button>
                         </div>
                     </div>
                     <div id="maps-akad" class="mt-3">
@@ -534,13 +553,14 @@
                             </h1>
                             <img src="img/frame.png"
                                 class="welcome-img  animate__animated animate__zoomIn animate__delay-1s">
-                            <h5 class="home-date animate__animated animate__zoomIn animate__delay-3s">- Minggu, 25 Juli
+                            <h5 class="home-date animate__animated animate__zoomIn animate__delay-3s">- Ahad, 25 Juli
                                 2021 -</h5>
                             <div class="px-4 animate__animated animate__zoomIn animate__delay-4s">
                                 <div class="card shadow mt-3" style="z-index: 3;">
                                     <div class="card-body">
                                         Kepada Yth: Bp/Ibu/Sdr/i :
                                         <h5 id="name"></h5>
+                                        <small>Di Tempat</small>
                                     </div>
                                 </div>
                             </div>
@@ -626,12 +646,12 @@
     <script>
         $(document).ready(function () {
             AOS.init();
-            var x = document.getElementById("playAudio");
-            x.play();
-            $('#waiting').show();
             setTimeout(function () {
-                $('#waiting').fadeOut(2000);
-            }, 3000);
+                $('#waiting').show();
+            }, 2000);
+            setTimeout(function () {
+                $('#waiting').fadeOut(1000);
+            }, 4000);
             setTimeout(function () {
                 $('#bukaUndangan').modal("show")
             }, 4000);
