@@ -24,7 +24,7 @@
 }
 
 .welcome-col {
-    padding: 45% 10px 0px 10px;
+    padding: 30% 10px 0px 10px;
     margin-left: 10px;
 }
 
@@ -48,22 +48,25 @@
 }
 
 .home-title {
-    font-family: 'Satisfy', cursive;
+    font-family: "welcome-title";
     font-weight: 500;
     text-shadow: 1px 1px gray;
-    font-size: 45px
+    font-size: 70px;
 }
 
 .home-couple {
-    font-family: 'Kaushan Script', cursive;
+    margin-top: -30px;
+    font-family: "welcome-title";
     font-weight: 500;
     text-shadow: 1px 1px gray;
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .home-date {
+    font-family: "home-title";
     margin-top: 30px;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
     font-weight: 100;
 }
 
@@ -115,7 +118,7 @@
 .text-countdown span {
     color: #533938;
     font-size: 35px;
-    font-family: 'Big Shoulders Inline Display', cursive;
+    font-family: 'card-title';
     font-weight: bold;
 }
 
@@ -159,18 +162,19 @@
 }
 
 .list-ucapan h6 {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bold;
     margin-bottom: -5px !important;
 }
 
 .list-ucapan small {
-    font-size: 11px;
+    font-size: 13px;
     color: rgb(139, 139, 253);
 }
 
 .list-ucapan p {
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .img-ucapan {
@@ -213,7 +217,7 @@
 
 .welcome-img {
     position: relative;
-    width: 80%;
+    width: 70%;
     margin-top: -60%;
     z-index: -1;
 }

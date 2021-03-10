@@ -25,28 +25,43 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style1.css">
     <style>
+        @font-face {
+            font-family: "welcome-title";
+            src: url("font/AnyerBeach-BW5nd.ttf")format("truetype");
+        }
+
+        @font-face {
+            font-family: "p";
+            src: url("font/break\ light\ fill.ttf")format("truetype");
+        }
+
+        @font-face {
+            font-family: "home-title";
+            src: url("font/SignatriaRegular-VG7nZ.ttf")format("truetype");
+        }
+
+        @font-face {
+            font-family: "page-title";
+            src: url("font/DeckledRegular-jEmqM.ttf")format("truetype");
+        }
+
+        @font-face {
+            font-family: "card-title";
+            src: url("font/BelgethaRegular-VG776.ttf")format("truetype");
+        }
+
         html {
             scroll-behavior: smooth;
         }
 
         body {
             background: url('img/bg.jpg');
-            font-size: 14px;
+            font-size: 16px;
+            font-family: "p";
+            font-weight: bold;
             color: #2c2c2a;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5 {
-            font-family: 'Kaushan Script', cursive;
-        }
-
-        h6 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .mobile-container {
@@ -63,6 +78,7 @@
             border: 2px solid #d6ccb6;
             background: url('img/bg-grit.png');
             width: 460px;
+            padding: 0px;
             position: fixed;
             margin-bottom: 0px;
             margin: -5px;
@@ -92,12 +108,25 @@
         .frame-col {
             text-align: center;
             width: 100%;
-            padding: 19% 10% 0 10%;
+            padding: 15% 10% 0 10%;
         }
 
         .frame-text {
             margin-top: 30%;
-            margin-bottom: -77%;
+            margin-bottom: -90%;
+            color: #E09824;
+            text-shadow: 2px 2px #bdbdbd;
+        }
+
+        .frame-text h1 {
+            font-family: "page-title";
+            font-size: 60px;
+        }
+
+        .frame-text h2 {
+            color: #252525;
+            font-weight: bold;
+            margin: -1% 0;
         }
 
         .frame {
@@ -105,7 +134,7 @@
         }
 
         .page-title {
-            font-family: 'Satisfy', cursive;
+            font-family: 'page-title';
         }
 
         .btn-wedding {
@@ -117,6 +146,7 @@
             color: #533938;
             font-size: 16px;
             z-index: 999;
+            font-weight: bold;
         }
 
         .btn-wedding:hover {
@@ -148,19 +178,42 @@
             width: 100%;
             height: 100vh;
             padding: 50% 10%;
-            background: url("img/bg-grit.png");
         }
 
         .form-control {
             border: 2px solid #918354;
             border-radius: 3px;
-            font-size: 13px;
+            font-size: 15px;
+            font-weight: bold;
         }
 
         .primary-menu:hover {
             box-shadow: 1px 1px;
             background: #c9c2af;
             border-radius: 5px;
+        }
+
+        .couple-font {
+            font-family: "home-title";
+            font-size: 35px;
+            color: #E09824;
+            text-shadow: 1px 1px #E09824;
+        }
+
+        .card-header {
+            background: url("img/bg.jpg");
+        }
+
+        .card-header h3 {
+            font-family: "card-title";
+            font-weight: 100;
+            font-size: 30px;
+            margin-bottom: -10px;
+            color: #333333;
+        }
+
+        .card-body {
+            background: url("img/bg-grit.png");
         }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
@@ -207,13 +260,14 @@
             <button onclick="stopAudio()" type="button" class="btn btn-danger btn-circle shadow" id="stopButton"><i
                     class="fa fa-volume-up"></i></button>
         </div>
+
         <div class="mobile-container" id="content">
             <div class="card-wedding" id="home-page">
                 <img src="img/photo/corner.png" class="top-corner">
                 <div class="frame-col">
                     <div class="frame-text">
                         <h1>Hafidz</h1>
-                        &
+                        <h2>&</h2>
                         <h1>Ismi</h1>
                     </div>
                     <img src="img/frame.png" class="frame">
@@ -247,7 +301,7 @@
                         <div class="col-12 text-center">
                             <img src="img/photo/hafidz-annur-fanany.png" width=50%" data-aos="zoom-in">
                             <div data-aos="fade-up">
-                                <h3>Hafidz Annur Fanany, S.Kom</h3>
+                                <h3 class="couple-font">Hafidz Annur Fanany, S.Kom</h3>
                                 <p>Putra dari<br>
                                     Bpk. Agus Supriyanto & Ibu. Hartini
                                 </p>
@@ -258,11 +312,12 @@
                                 </small>
                             </div>
                         </div>
-                        <h4 class="text-center mt-5 mb-5" data-aos="zoom-in">Dengan</h4>
+                        <h4 class="text-center mt-4 mb-4" data-aos="zoom-in" style="font-family: page-title;">Dengan
+                        </h4>
                         <div class="col-12 text-center">
                             <img src="img/photo/ismi-nur-aini.png" width=50%" data-aos="zoom-in">
                             <div data-aos="fade-up">
-                                <h3>Ismi Nur Aini, S.Kom</h3>
+                                <h3 class="couple-font">Ismi Nur Aini, S.Kom</h3>
                                 <p>Putri dari<br>
                                     Bpk. Supardi & Ibu. Waris
                                 </p>
@@ -286,10 +341,10 @@
                             <div class="img-event">
                                 <img src="img/photo/hi.png" width="100%">
                             </div>
-                            <div class="card mb-4 card-1">
+                            <div class="card mb-4 card-1 shadow-sm">
                                 <div class="card-header">
                                     <h3 class="mt-2" style="display:inline; float: left;">Akad Nikah</h3>
-                                    <img src="img/ring.png" width="10%" style="display:inline; float: right;">
+                                    <img src="img/ring.png" width="11%" style="display:inline; float: right;">
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
@@ -327,10 +382,10 @@
 
                         </div>
                         <div class="col-md-12">
-                            <div class="card mb-4 card-1">
+                            <div class="card mb-4 card-1 shadow-sm">
                                 <div class="card-header">
                                     <h3 class="mt-2" style="display:inline; float: left;">Ngunduh Temanten</h3>
-                                    <img src="img/celeberate.png" width="10%" style="display:inline; float: right;">
+                                    <img src="img/celeberate.png" width="15%" style="display:inline; float: right;">
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
@@ -406,20 +461,12 @@
                 <div id="maps">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <h3 class="page-title pt-4">Denah</h3>
+                            <h3 class="page-title pt-4 pb-3">Denah</h3>
+
+                            <iframe
+                                src="https://www.google.com/maps/d/u/0/embed?mid=1fWAH6649XdBu95bOmnXwzMFMmNo42edU&z=19"
+                                width="100%" height="400"></iframe>
                         </div>
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-outline-dark" id="akad">Akad Nikah</button>
-                            <button type="button" class="btn btn-outline-dark" id="resepsi">Ngunduh Temanten</button>
-                        </div>
-                    </div>
-                    <div id="maps-akad" class="mt-3">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1wkQSKTTzBqiIJ6OlU88JfLwz-q6tEEFk&z=19"
-                            width="100%" height="400"></iframe>
-                    </div>
-                    <div id="maps-resepsi" class="mt-1">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fWAH6649XdBu95bOmnXwzMFMmNo42edU&z=19"
-                            width="100%" height="400"></iframe>
                     </div>
                 </div>
                 <img src="img/photo/bot-corner.png" class="bot-corner">
@@ -516,20 +563,6 @@
         </div>
     </div>
 
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="modal" style="padding-top:0" data-backdrop="static" onclick="this.style.display='none'">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <img id="img01" class="w3-image" style="width: 100%;">
-                    <button type="button" class="mt-2 btn-wedding close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="waiting" class="text-center">
         <img src="img/loading.gif" width="20%" class="mb-3">
         <h4>Tunggu Sebentar</h4>
@@ -543,19 +576,22 @@
                     <div class="row">
                         <div class="col position-absolute text-center welcome-col" style="margin-top:-40px; z-index: 2;"
                             id="title">
-                            <h1 class="home-title animate__animated animate__zoomIn animate__delay-2s">The Wedding of
+                            <h1 class="home-title animate__animated animate__zoomIn animate__delay-2s">The Wedding
+                                of
                             </h1>
-                            <h1 class="home-couple animate__animated animate__zoomIn animate__delay-2s">Hafidz & Ismi
+                            <h1 class="home-couple animate__animated animate__zoomIn animate__delay-2s">Hafidz &
+                                Ismi
                             </h1>
                             <img src="img/frame.png"
                                 class="welcome-img  animate__animated animate__zoomIn animate__delay-1s">
-                            <h5 class="home-date animate__animated animate__zoomIn animate__delay-3s">- Ahad, 25 Juli
+                            <h5 class="home-date animate__animated animate__zoomIn animate__delay-3s">- Ahad, 25
+                                Juli
                                 2021 -</h5>
                             <div class="px-4 animate__animated animate__zoomIn animate__delay-4s">
                                 <div class="card shadow mt-3" style="z-index: 3;">
-                                    <div class="card-body">
+                                    <div class="card-body" style="font-family: p; background: url('img/bg.jpg');">
                                         Kepada Yth: Bp/Ibu/Sdr/i :
-                                        <h5 id="name"></h5>
+                                        <h5 id="name" style="font-family: page-title;"></h5>
                                         <small>Di Tempat</small>
                                     </div>
                                 </div>
@@ -566,6 +602,20 @@
                             </button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="modal" style="padding-top:0" data-backdrop="static" onclick="this.style.display='none'">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img id="img01" class="w3-image" style="width: 100%;">
+                    <button type="button" class="mt-2 btn-wedding close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -651,8 +701,6 @@
             setTimeout(function () {
                 $('#bukaUndangan').modal("show")
             }, 4000);
-            $("#maps-akad").show();
-            $("#maps-resepsi").hide();
             $("#content").hide();
             $("#event-page").hide();
             $("#maps-page").hide();
@@ -747,16 +795,6 @@
             y.style.display = "block";
             z.style.display = "none";
         }
-
-        $("#akad").click(function () {
-            $("#maps-akad").fadeIn("slow");
-            $("#maps-resepsi").hide();
-        });
-
-        $("#resepsi").click(function () {
-            $("#maps-akad").hide();
-            $("#maps-resepsi").fadeIn("slow");
-        });
     </script>
     <!-- nama tamu -->
     <script>
