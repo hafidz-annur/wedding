@@ -13,7 +13,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/icons/wedding-rings.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/rings.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <title>Wedding</title>
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         @font-face {
             font-family: "welcome-title";
@@ -58,10 +58,14 @@
 
         body {
             background: url('img/bg.jpg');
-            font-size: 16px;
+            font-size: 17px;
             font-family: "p";
             font-weight: bold;
             color: #2c2c2a;
+        }
+
+        small {
+            font-size: 16px;
         }
 
         .mobile-container {
@@ -76,9 +80,9 @@
 
         .menu-bottom {
             border: 2px solid #d6ccb6;
-            background: url('img/bg-grit.png');
             width: 460px;
-            padding: 0px;
+            background: url('img/bg.jpg');
+            padding: 0 12px;
             position: fixed;
             margin-bottom: 0px;
             margin: -5px;
@@ -188,8 +192,8 @@
 
         .primary-menu:hover {
             box-shadow: 1px 1px;
-            background: #c9c2af;
-            border-radius: 5px;
+            background: #ffffff;
+            border-radius: 0px;
         }
 
         .couple-font {
@@ -203,16 +207,15 @@
             background: url("img/bg.jpg");
         }
 
-        .card-header h3 {
+        .card-body h3 {
             font-family: "card-title";
             font-weight: 100;
             font-size: 30px;
-            margin-bottom: -10px;
             color: #333333;
         }
 
         .card-body {
-            background: url("img/bg-grit.png");
+            background: url("img/bg.jpg");
         }
 
         @media only screen and (max-width: 800px) and (min-width: 0px) {
@@ -298,7 +301,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 text-center">
-                            <img src="img/photo/hafidz-annur-fanany.png" width=60%" data-aos="zoom-in">
+                            <img src="img/photo/hafidz-annur-fanany.png" width=50%" data-aos="zoom-in">
                             <div data-aos="fade-up">
                                 <h3 class="couple-font">Hafidz Annur Fanany, S.Kom</h3>
                                 <p>Putra dari<br>
@@ -314,7 +317,7 @@
                         <h4 class="text-center mt-4 mb-4" data-aos="zoom-in" style="font-family: page-title;">Dengan
                         </h4>
                         <div class="col-12 text-center">
-                            <img src="img/photo/ismi-nur-aini.png" width=60%" data-aos="zoom-in">
+                            <img src="img/photo/ismi-nur-aini.png" width=55%" data-aos="zoom-in">
                             <div data-aos="fade-up">
                                 <h3 class="couple-font">Ismi Nur Aini, S.Kom</h3>
                                 <p>Putri dari<br>
@@ -337,89 +340,40 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h3 class="page-title pt-3 text-center">Acara</h3>
+                            <div class="px-4 mb-2 text-center">
+                                Dengan memohon rahmat dan ridho Allah SWT, izinkan kami mengundang Bapak/Ibu/Saudara(i)
+                                untuk menghadiri acara ngunduh mantu pernikahan putra-putri kami
+                            </div>
                             <div class="img-event">
                                 <img src="img/photo/hi.png" width="100%">
                             </div>
                             <div class="card mb-4 card-1 shadow-sm">
-                                <div class="card-header">
-                                    <h3 class="mt-2" style="display:inline; float: left;">Akad Nikah</h3>
-                                    <img src="img/ring.png" width="11%" style="display:inline; float: right;">
-                                </div>
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <table class="text-left">
-                                                <tr>
-                                                    <td><i class="far fa-clock fa-fw"></i></td>
-                                                    <td>Pukul 08:00 WIB</td>
-                                                </tr>
-                                                <tr>
-                                                    <td valign="top">
-                                                        <i class="far fa-calendar-alt fa-fw"></i>
-                                                    </td>
-                                                    <td>
-                                                        Sabtu, 24 Juli 2021
-                                                        <hr style="margin:10px 0px;">
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td valign="top">
-                                                        <i class="fa fa-map-pin fa-fw"></i>
-                                                    </td>
-                                                    <td>
-                                                        <small>
-                                                            Ledok RT.20 RW.07 Karangpelem, Kedawung, Kab. Sragen
-                                                        </small>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                        <div class="col-12 text-center">
+                                            <img src="img/icons/rings.png" width="11%">
+                                            <h3 class="mt-2">Akad Nikah</h3>
+                                            Pukul 08:00 WIB <br>
+                                            Sabtu, 24 Juli 2021 <br>
+                                            <hr style="margin-top: 0px; margin-bottom: 0;">
+                                            Ledok RT.20 RW.07 Karangpelem, Kedawung, Kab. Sragen
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 text-center">
                             <div class="card mb-4 card-1 shadow-sm">
-                                <div class="card-header">
-                                    <h3 class="mt-2" style="display:inline; float: left;">Ngunduh Temanten</h3>
-                                    <img src="img/celeberate.png" width="15%" style="display:inline; float: right;">
-                                </div>
                                 <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <table class="text-left">
-                                                <tr>
-                                                    <td><i class="far fa-clock fa-fw"></i></td>
-                                                    <td>Pukul 10:00 WIB</td>
-                                                </tr>
-                                                <tr>
-                                                    <td valign="top">
-                                                        <i class="far fa-calendar-alt fa-fw"></i>
-                                                    </td>
-                                                    <td>
-                                                        Ahad, 25 Juli 2021
-                                                        <hr style="margin:10px 0px;">
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td valign="top">
-                                                        <i class="fa fa-map-pin fa-fw"></i>
-                                                    </td>
-                                                    <td>
-                                                        <small>
-                                                            Pucangsawit RT.04 RW.07 Jebres Kota Surakarta
-                                                        </small>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
+                                    <img src="img/icons/love.svg" width="15%">
+                                    <h3 class="mt-2">Ngunduh Temanten</h3>
+                                    Pukul 10:00 WIB <br>
+                                    Ahad, 25 Juli 2021 <br>
+                                    <hr style="margin-top: 0px; margin-bottom: 0;">
+                                    Pucangsawit RT.04 RW.07 Jebres Kota Surakarta
                                 </div>
                             </div>
-
                         </div>
                         <div class="col-md-12 mt-2 text-center">
                             <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N2Q4MWN1cW1tOGFicXA1Nmk0ZHJ2azNuOHUgaGFmaWR6LmJkdEBt&tmsrc=hafidz.bdt%40gmail.com"
@@ -429,7 +383,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-1 mb-4 px-4 pb-4 text-center">
+                <div class="mt-1 mb-4 px-5 pb-4 text-center">
                     <span>
                         وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا
                         إِلَيْهَا
@@ -461,7 +415,12 @@
                     <div class="row">
                         <div class="col-12 text-center">
                             <h3 class="page-title pt-4 pb-3">Denah</h3>
-
+                            <div class="px-3 mb-3">
+                                Merupakan suatu kehormatan dan kebahagiaan
+                                bagi kami apabila Bapak/Ibu/Saudara(i)
+                                berkenan hadir untuk memberikan do'a restu
+                                kepada kedua mempelai.
+                            </div>
                             <iframe
                                 src="https://www.google.com/maps/d/u/0/embed?mid=1fWAH6649XdBu95bOmnXwzMFMmNo42edU&z=19"
                                 width="100%" height="400"></iframe>
@@ -691,16 +650,17 @@
     <script>
         $(document).ready(function () {
             AOS.init();
-            setTimeout(function () {
-                $('#waiting').show();
-            }, 2000);
-            setTimeout(function () {
-                $('#waiting').fadeOut(1000);
-            }, 4000);
-            setTimeout(function () {
-                $('#bukaUndangan').modal("show")
-            }, 4000);
-            $("#content").hide();
+            $('#waiting').hide();
+            // setTimeout(function () {
+            //     $('#waiting').show();
+            // }, 2000);
+            // setTimeout(function () {
+            //     $('#waiting').fadeOut(1000);
+            // }, 4000);
+            // setTimeout(function () {
+            //     $('#bukaUndangan').modal("show")
+            // }, 4000);
+            $("#content").show();
             $("#event-page").hide();
             $("#maps-page").hide();
             $("#say-page").hide();
