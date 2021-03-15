@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <table id="list-ucapan" class="table table-striped">
+        <tr class="text-center">
+            <th>Nama</th>
+            <th>Ucapan</th>
+        </tr>
+    </table>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+<!-- Firebase  -->
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDuR9w9hyA_O8wITMUB0Azx9K-p7gg6vdc",
+        authDomain: "wedding-9d89a.firebaseapp.com",
+        projectId: "wedding-9d89a",
+        storageBucket: "wedding-9d89a.appspot.com",
+        messagingSenderId: "68200932798",
+        appId: "1:68200932798:web:bb123776e4ee1d5a88c5ef",
+        measurementId: "G-SV5Z9XMN9K"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const db = firebase.database()
+
+    function listTamu() {
+        let tamu = db.ref("tamu/").orderByChild("order");
+        // Memuat Data
+        tamu.on("child_added", function (data, prevChildKey) {
+            const datas = data.val();
+            $("#list-ucapan").append(
+                "<tr>" +
+                "<td>" + datas.nama + "</td>" +
+                "<td>" + datas.ucapan + "</td>" +
+                "</tr>"
+            )
+        });
+    }
+
+    listTamu();
+
+</script>
+
+</html>
