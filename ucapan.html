@@ -44,14 +44,14 @@
     function listTamu() {
         let tamu = db.ref("tamu/").orderByChild("order");
         // Memuat Data
-        tamu.on("child_added", function (data, prevChildKey) {
+        tamu.on("child_added", function (data) {
             const datas = data.val();
-            $("#list-ucapan").append(
-                "<tr>" +
-                "<td>" + datas.nama + "</td>" +
-                "<td>" + datas.ucapan + "</td>" +
-                "</tr>"
-            )
+            // $("#list-ucapan").append(
+            //     "<tr>" +
+            //     "<td>" + datas.key + "</td>" +
+            //     "<td>" + datas.ucapan + "</td>" +
+            //     "</tr>"
+            // )
         });
     }
 

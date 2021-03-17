@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Wedding of Hafidz & Ismi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="The Wedding of Hafidz & Ismi">
+    <meta property="og:url" content="https://hafidz-annur.github.io/wedding/?n=Tamu-Undangan">
+    <meta name="description" content="Spesial mengundang anda untuk menghadiri pernikahan kami." />
+    <meta property="og:image" content="https://hafidz-annur.github.io/wedding/img/photo/p-4.jpeg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icons/rings.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <title>Wedding</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @font-face {
+            font-family: "welcome-title";
+            src: url("font/AnyerBeach-BW5nd.ttf")format("truetype");
+        }
+
+        @font-face {
+            font-family: "p";
+            src: url("font/break\ light\ fill.ttf")format("truetype");
+        }
+
+        @font-face {
+            font-family: "home-title";
+            src: url("font/SignatriaRegular-VG7nZ.ttf")format("truetype");
+        }
+
+        @font-face {
+            font-family: "page-title";
+            src: url("font/DeckledRegular-jEmqM.ttf")format("truetype");
+        }
+
+        @font-face {
+            font-family: "card-title";
+            src: url("font/BelgethaRegular-VG776.ttf")format("truetype");
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: url('img/bg.jpg');
+            font-size: 17px;
+            font-family: "p";
+            font-weight: bold;
+            color: #2c2c2a;
+        }
+
+        small {
+            font-size: 16px;
+        }
+
+        .mobile-container {
+            width: 450px;
+            margin: auto;
+            margin-top: -10px;
+        }
+
+        .modal-content {
+            border: none !important;
+        }
+
+        .menu-bottom {
+            border: 2px solid #d6ccb6;
+            width: 460px;
+            background: url('img/bg.jpg');
+            padding: 0 12px;
+            position: fixed;
+            margin-bottom: 0px;
+            margin: -5px;
+            bottom: 0;
+            z-index: 999;
+        }
+
+        .top-corner {
+            position: absolute;
+            width: 25%;
+            margin-left: -20px;
+            margin-top: -10px;
+            z-index: 1;
+        }
+
+        .bot-corner {
+            display: none;
+        }
+
+        .card-wedding {
+            border: 4px solid #918354;
+            margin-top: 10px;
+            border-radius: 20px;
+            margin-bottom: 20%;
+        }
+
+        .frame-col {
+            text-align: center;
+            width: 100%;
+            padding: 10% 10% 0 10%;
+        }
+
+        .frame-text {
+            margin-top: 30%;
+            margin-bottom: -95%;
+            color: #414040;
+        }
+
+        .frame-text h1 {
+            font-family: "page-title";
+            font-size: 60px;
+        }
+
+        .frame-text h2 {
+            color: #252525;
+            font-weight: bold;
+            margin: -1% 0;
+        }
+
+        .frame {
+            width: 100%;
+        }
+
+        .page-title {
+            font-family: 'page-title';
+        }
+
+        .btn-wedding {
+            position: relative;
+            padding: 5px 20px;
+            border: 2px solid #918354;
+            text-decoration: none;
+            border-radius: 15px;
+            color: #533938;
+            font-size: 16px;
+            z-index: 999;
+            font-weight: bold;
+        }
+
+        .btn-wedding:hover {
+            border: 2px solid #533938;
+            background: #533938;
+            color: white;
+        }
+
+        .gallery-col {
+            width: 50%;
+            height: 100%;
+        }
+
+        .gallery-img {
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+            transition: .2s;
+            width: 100%;
+        }
+
+        .gallery-img:hover {
+            -webkit-filter: grayscale(0%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+        }
+
+        #waiting {
+            width: 100%;
+            height: 100vh;
+            padding: 50% 10%;
+        }
+
+        .form-control {
+            border: 2px solid #918354;
+            border-radius: 3px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .primary-menu:hover {
+            box-shadow: 1px 1px;
+            background: #ffffff;
+            border-radius: 0px;
+        }
+
+        .couple-font {
+            font-family: "home-title";
+            font-size: 35px;
+            color: #E09824;
+            text-shadow: 1px 1px #E09824;
+        }
+
+        .card-header {
+            background: url("img/bg.jpg");
+        }
+
+        .card-body h3 {
+            font-family: "card-title";
+            font-weight: 100;
+            font-size: 30px;
+            color: #333333;
+        }
+
+        .card-body {
+            background: url("img/bg.jpg");
+        }
+
+        @media only screen and (max-width: 800px) and (min-width: 0px) {
+            .mobile-container {
+                width: 100%;
+                margin: 0;
+            }
+
+            .menu-bottom {
+                width: 100%;
+                margin-left: -12px;
+            }
+
+            .top-corner {
+                position: absolute;
+                width: 70%;
+                margin-left: -20px;
+                margin-top: -10px;
+                z-index: 1;
+            }
+
+            .bot-corner {
+                display: block;
+                position: absolute;
+                width: 70%;
+                margin-top: -55%;
+                right: 0;
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- musik -->
+        <audio id="playAudio" loop>
+            <source src="sound/instrument-new.mp3">
+        </audio>
+
+        <div class="audio-button">
+            <button onclick="playAudio()" type="button" class="btn btn-primary btn-circle shadow" id="playButton"><i
+                    class="fa fa-volume-mute"></i></button>
+            <button onclick="stopAudio()" type="button" class="btn btn-danger btn-circle shadow" id="stopButton"><i
+                    class="fa fa-volume-up"></i></button>
+        </div>
+
+        <div class="mobile-container" id="content">
+            <div class="card-wedding" id="home-page">
+                <img src="img/photo/corner.png" class="top-corner">
+                <div class="frame-col">
+                    <div class="frame-text">
+                        <h1>Ismi</h1>
+                        <h2>&</h2>
+                        <h1>Hafidz</h1>
+                    </div>
+                    <img src="img/frame.png" class="frame">
+                </div>
+                <div id="couple">
+                    <div class="row">
+                        <div class="col-md-12 align-self-center">
+                            <div class="countdown mb-4" data-aos="fade-up">
+                                <div class="text-center text-countdown" data-aos="zoom-in">
+                                    <span class="time" id="day"></span> :
+                                    <span class="time" id="hour"></span> :
+                                    <span class="time" id="minute"></span> :
+                                    <span class="time" id="second"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <div class="col-md-12 text-center">
+                            <h4>
+                                بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْ
+                            </h4>
+                            <p class="m-3 text-center">
+                                Assalamu'alaikum Warahmatullahi Wabarakatuh<br><br>
+                                Dengan Rahmat dan Ridlo Allah SWT. Kami mengharap dengan hormat atas
+                                kehadiran Bapak/Ibu/Saudara(i) pada pernikahan Putra-Putri kami
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="img/photo/ismi-nur-aini.png" width=55%" data-aos="zoom-in">
+                            <div data-aos="fade-up">
+                                <h3 class="couple-font">Ismi Nur Aini, S.Kom</h3>
+                                <p>Putri dari<br>
+                                    Bpk. Supardi & Ibu. Waris
+                                </p>
+                                <i class="fas fa-map-marker-alt"></i><br>
+                                <small>
+                                    Ledok RT.20 RW.07<br>
+                                    Karangpelem, Kedawung, Kab. Sragen
+                                </small>
+                            </div>
+                        </div>
+                        <h4 class="text-center mt-4 mb-4" data-aos="zoom-in" style="font-family: page-title;">Dengan
+                        </h4>
+                        <div class="col-12 text-center">
+                            <img src="img/photo/hafidz-annur-fanany.png" width=50%" data-aos="zoom-in">
+                            <div data-aos="fade-up">
+                                <h3 class="couple-font">Hafidz Annur Fanany, S.Kom</h3>
+                                <p>Putra dari<br>
+                                    Bpk. Agus Supriyanto & Ibu. Hartini
+                                </p>
+                                <i class="fas fa-map-marker-alt"></i><br>
+                                <small>
+                                    Pucangsawit RT.04 RW.07<br>
+                                    Jebres, Kota Surakarta
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/photo/bot-corner.png" class="bot-corner">
+            </div>
+            <div class="card-wedding" id="event-page">
+                <img src="img/photo/corner.png" class="top-corner">
+                <div id="event">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="page-title pt-3 text-center">Acara</h3>
+                            <div class="px-4 mb-2 text-center">
+                                Dengan memohon rahmat dan ridho Allah SWT, izinkan kami mengundang Bapak/Ibu/Saudara(i)
+                                untuk menghadiri acara pernikahan putra-putri kami
+                            </div>
+                            <div class="img-event">
+                                <img src="img/photo/hi.png" width="100%">
+                            </div>
+                            <div class="card mb-4 card-1 shadow-sm">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <img src="img/icons/rings.png" width="11%">
+                                            <h3 class="mt-2">Akad Nikah</h3>
+                                            Pukul 08:00 WIB <br>
+                                            Sabtu, 24 Juli 2021 <br>
+                                            <hr style="margin-top: 0px; margin-bottom: 0;">
+                                            Ledok RT.20 RW.07 Karangpelem, Kedawung, Kab. Sragen
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="card mb-4 card-1 shadow-sm" data-aos="fade-up" data-aos-offset="0">
+                                <div class="card-body">
+                                    <img src="img/icons/love.svg" width="15%">
+                                    <h3 class="mt-2">Ngunduh Temanten</h3>
+                                    Pukul 10:00 WIB <br>
+                                    Ahad, 25 Juli 2021 <br>
+                                    <hr style="margin-top: 0px; margin-bottom: 0;">
+                                    Pucangsawit RT.04 RW.07 Jebres Kota Surakarta
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-2 text-center" data-aos="fade-up" data-aos-offset="0">
+                            <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NnJpNjltMmxvMm9jNDllMjZwMXR1N2twZHEgaGFmaWR6LmJkdEBt&tmsrc=hafidz.bdt%40gmail.com"
+                                target="_blank" class="btn-wedding">
+                                <i class="far fa-calendar-check"></i> &nbsp; SaveTheDate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-1 mb-4 px-5 pb-4 text-center" data-aos="fade-up" data-aos-offset="0">
+                    <span>
+                        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجاً لِّتَسْكُنُوا
+                        إِلَيْهَا
+                        وَجَعَلَ
+                        بَيْنَكُم
+                        مَّوَدَّةً
+                        وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+                        <br>
+                        <br>
+                        “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri
+                        dari
+                        jenismu
+                        sendiri,
+                        supaya kamu
+                        cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
+                        sayang.
+                        Sesungguhnya
+                        pada yang
+                        demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir”
+                        <br><br>
+                        <i>(QS. Ar-Ruum 30 : 21)</i>
+                    </span>
+                </div>
+                <img src="img/photo/bot-corner.png" class="bot-corner">
+            </div>
+            <div class="card-wedding" id="maps-page">
+                <img src="img/photo/corner.png" class="top-corner">
+                <div id="maps">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h3 class="page-title pt-4 pb-3">Denah</h3>
+                            <div class="px-3 mb-3" data-aos="fade-up" data-aos-offset="0">
+                                Merupakan suatu kehormatan dan kebahagiaan
+                                bagi kami apabila Bapak/Ibu/Saudara(i)
+                                berkenan hadir untuk memberikan do'a restu
+                                kepada kedua mempelai.
+                            </div>
+                            <iframe
+                                src="https://www.google.com/maps/d/u/0/embed?mid=1wkQSKTTzBqiIJ6OlU88JfLwz-q6tEEFk&z=19"
+                                width="100%" height="400" data-aos="fade-up" data-aos-offset="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/photo/bot-corner.png" class="bot-corner">
+            </div>
+            <div class="card-wedding" id="say-page">
+                <img src="img/photo/corner.png" class="top-corner">
+                <div id="ucapans">
+                    <div class="row">
+                        <div class="col-md-12 text-center" id="form-ucapan">
+                            <h3 class="mb-4 page-title pt-3 px-3">Kartu Ucapan</h3>
+                            <div class="form-group text-left px-4">
+                                <input type="text" name="id" id="userId" class="form-control" hidden>
+                                <input type="text" name="order" id="order" class="form-control" hidden>
+                                <input type="text" name="nama_tamu" id="namaTamu" class="form-control" required
+                                    placeholder="Masukan nama anda">
+                            </div>
+                            <div class="form-group text-left mt-2 px-4">
+                                <textarea name="ucapan" id="ucapan" rows="10" class="form-control" required
+                                    placeholder="Masukan ucapan dan doa anda"></textarea>
+                            </div>
+                            <div class="form-group float-right mt-2 px-3">
+                                <button id="btn-submit" class="btn-wedding">Kirim
+                                    Ucapan</button>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 mt-4" data-aos="fade-up" data-aos-offset="0">
+                            <div class="list-ucapan">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/photo/bot-corner.png" class="bot-corner">
+            </div>
+            <div class="card-wedding" id="gallery-page">
+                <img src="img/photo/corner.png" class="top-corner">
+                <div id="gallery">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h3 class="mb-4 page-title pt-3 px-3">Galeri</h3>
+                        </div>
+                    </div>
+                    <div class="row g-0 px-3">
+                        <div class="col-6 gallery-col">
+                            <img src="img/photo/p-5.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-4.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-9.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-1.jpeg" class="gallery-img" onclick="onClick(this)">
+                        </div>
+                        <div class=" col-6 gallery-col">
+                            <img src="img/photo/p-2.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-8.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-3.jpeg" class="gallery-img" onclick="onClick(this)">
+                            <img src="img/photo/p-6.jpeg" class="gallery-img" onclick="onClick(this)">
+                        </div>
+                    </div>
+                    <p class=" text-center mt-4" data-aos="fade-up" data-aos-offset="0">
+                        Atas kehadiran dan do'a restunya, kami mengucapkan terima kasih. <br><br>
+                        Wassalamu'alaikum Warahmatullahi Wabarokaatuh <br><br>
+                        Kami yang berbahagia <br>
+                        Keluarga : <br>
+                        Bp/Ibu.Supardi/Waris
+                        & <br>
+                        Bp/Ibu.Agus Supriyanto/Hartini <br>
+                    </p>
+                </div>
+                <img src="img/photo/bot-corner.png" class="bot-corner">
+            </div>
+            <div class="menu-bottom">
+                <div class="row">
+                    <div class="col primary-menu" id="home-button">
+                        <div class="icon-menu">
+                            <img src="img/icons/wedding-rings.svg" width="40%">
+                        </div>
+                    </div>
+                    <div class="col primary-menu" id="event-button">
+                        <div class="icon-menu">
+                            <img src="img/icons/calendar.svg" width="40%">
+                        </div>
+                    </div>
+                    <div class="col primary-menu" id="maps-button">
+                        <div class="icon-menu">
+                            <img src="img/icons/map.svg" width="40%">
+                        </div>
+                    </div>
+                    <div class="col primary-menu" id="say-button">
+                        <div class="icon-menu">
+                            <img src="img/icons/chat.svg" width="40%">
+                        </div>
+                    </div>
+                    <div class="col primary-menu" id="gallery-button">
+                        <div class="icon-menu">
+                            <img src="img/icons/gallery.svg" width="40%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="waiting" class="text-center">
+        <img src="img/loading.gif" width="20%" class="mb-3">
+        <h4>Tunggu Sebentar</h4>
+    </div>
+
+    <!-- Buka Undangan Modal -->
+    <div class="modal fadeInDown" id="bukaUndangan" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content mobile-container">
+                <div data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col position-absolute text-center welcome-col" style="margin-top:-40px; z-index: 2;"
+                            id="title">
+                            <h1 class="home-title animate__animated animate__zoomIn animate__delay-2s">The Wedding
+                                of
+                            </h1>
+                            <h1 class="home-couple animate__animated animate__zoomIn animate__delay-2s">Hafidz &
+                                Ismi
+                            </h1>
+                            <img src="img/frame.png"
+                                class="welcome-img  animate__animated animate__zoomIn animate__delay-1s">
+                            <h5 class="home-date animate__animated animate__zoomIn animate__delay-3s">- Sabtu, 24
+                                Juli
+                                2021 -</h5>
+                            <div class="px-4 animate__animated animate__zoomIn animate__delay-4s">
+                                <div class="card shadow mt-3" style="z-index: 3;">
+                                    <div class="card-body" style="font-family: p; background: url('img/bg.jpg');">
+                                        Kepada Yth: Bp/Ibu/Sdr/i :
+                                        <h5 id="name" style="font-family: page-title;"></h5>
+                                        <small>Di Tempat</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-wedding mt-3 mb-4 animate__animated animate__zoomIn animate__delay-5s"
+                                data-dismiss="modal" id="bukaTombol" style="z-index: 3;">
+                                Buka Undangan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="modal" style="padding-top:0" data-backdrop="static" onclick="this.style.display='none'">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img id="img01" class="w3-image" style="width: 100%;">
+                    <button type="button" class="mt-2 btn-wedding close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert  -->
+    <div class=" modal fade" id="alertMsg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="alert">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- Countdown timer  -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jul 25, 2021 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("day").innerHTML = days;
+            document.getElementById("hour").innerHTML = hours;
+            document.getElementById("minute").innerHTML = minutes;
+            document.getElementById("second").innerHTML = seconds;
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("day").innerHTML = "00";
+                document.getElementById("hour").innerHTML = "00";
+                document.getElementById("minute").innerHTML = "00";
+                document.getElementById("second").innerHTML = "00";
+            }
+        }, 1000);
+    </script>
+    <!-- Other  -->
+    <script>
+        $(document).ready(function () {
+            AOS.init();
+            $("#content").hide();
+            // $('#waiting').hide();
+            setTimeout(function () {
+                $('#waiting').show();
+            }, 2000);
+            setTimeout(function () {
+                $('#waiting').fadeOut(1000);
+            }, 4000);
+            setTimeout(function () {
+                $('#bukaUndangan').modal("show")
+            }, 4000);
+            $("#event-page").hide();
+            $("#maps-page").hide();
+            $("#say-page").hide();
+            $("#gallery-page").hide();
+            $("#playButton").hide();
+
+        });
+
+        $("#bukaTombol").click(function () {
+            $("#content").fadeIn(3000);
+            $('#bukaUndangan').modal("hide");
+            var x = document.getElementById("playAudio");
+            var y = document.getElementById("playButton");
+            var z = document.getElementById("stopButton");
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        });
+
+        $("#home-button").click(function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            $("#home-page").fadeIn(1000);
+            $("#event-page").hide();
+            $("#maps-page").hide();
+            $("#say-page").hide();
+            $("#gallery-page").hide();
+        })
+
+        $("#event-button").click(function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            $("#home-page").hide();
+            $("#event-page").fadeIn(1000);
+            $("#maps-page").hide();
+            $("#say-page").hide();
+            $("#gallery-page").hide();
+        })
+
+        $("#maps-button").click(function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            $("#home-page").hide();
+            $("#event-page").hide();
+            $("#maps-page").fadeIn(1000);
+            $("#say-page").hide();
+            $("#gallery-page").hide();
+        })
+
+        $("#say-button").click(function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            $("#home-page").hide();
+            $("#event-page").hide();
+            $("#maps-page").hide();
+            $("#say-page").fadeIn(1000);
+            $("#gallery-page").hide();
+        })
+
+        $("#gallery-button").click(function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            $("#home-page").hide();
+            $("#event-page").hide();
+            $("#maps-page").hide();
+            $("#say-page").hide();
+            $("#gallery-page").fadeIn(1000);
+        })
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        var x = document.getElementById("playAudio");
+        var y = document.getElementById("playButton");
+        var z = document.getElementById("stopButton");
+        z.style.display = "none";
+        function playAudio() {
+            x.play();
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+
+        function stopAudio() {
+            x.pause();
+            y.style.display = "block";
+            z.style.display = "none";
+        }
+    </script>
+    <!-- nama tamu -->
+    <script>
+        function GetURLParameter(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) {
+                    return sParameterName[1];
+                }
+            }
+        }
+        var name = GetURLParameter('n').split("-");
+        var finalName = name.replace(/,/g, " ");
+        if (name != "") {
+            document.getElementById("name").innerHTML = finalName
+        } else {
+            document.getElementById("name").innerHTML = "Di Tempat"
+        }
+    </script>
+    <!-- Firebase  -->
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDuR9w9hyA_O8wITMUB0Azx9K-p7gg6vdc",
+            authDomain: "wedding-9d89a.firebaseapp.com",
+            projectId: "wedding-9d89a",
+            storageBucket: "wedding-9d89a.appspot.com",
+            messagingSenderId: "68200932798",
+            appId: "1:68200932798:web:bb123776e4ee1d5a88c5ef",
+            measurementId: "G-SV5Z9XMN9K"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        const db = firebase.database()
+        const blogRef = db.ref('tamu').on('value', handleSuccess, handleError)
+
+        function listTamu() {
+            let tamu = db.ref("tamu/").orderByChild("order");
+            // Dapatkan referensi table
+            var list_ucapan = document.getElementById("list-ucapan")
+
+            // Memuat Data
+            tamu.on("child_added", function (data, prevChildKey) {
+                var datas = data.val();
+                $(".list-ucapan").append(
+                    "<div div class='list'>" +
+                    "<div class='row g-0'>" +
+                    "<div class='col-2 text-center'>" +
+                    "<img src='img/robot/" + datas.avatar + "' class='img-ucapan'/>" +
+                    "</div>" +
+                    "<div class='col-10'>" +
+                    "<h6 class='tamuNama'>" + datas.nama + "</h6>" +
+                    "<small class='tamuTanggal'>" + datas.tgl_kirim + "</small>" +
+                    "<hr style='margin:0px;'>" +
+                    "<p class='tamuUcapan'>" +
+                    datas.ucapan +
+                    "</p>" +
+                    "</div>" +
+                    " </div>" +
+                    "</div>"
+                )
+            });
+        }
+
+        listTamu();
+
+
+        function handleSuccess(items) {
+            // console.log(items.val())
+        }
+
+        function handleError(erro) {
+            console.log(error)
+        }
+
+        function userId() {
+            let tamus = db.ref("tamu/").limitToLast(1);
+            tamus.on("child_added", function (data, prevChildKey) {
+                let id = parseInt(data.key) + 1
+                $("#userId").val(id)
+                let order = parseInt(data.val().order) - 1
+                $("#order").val(order)
+            });
+        }
+
+        userId();
+
+        function avatar() {
+            let avatar = ['rb-1.png', 'rb-2.png', 'rb-3.png', 'rb-4.png']
+            var rand = avatar[(Math.random() * avatar.length) | 0]
+            return rand
+        }
+
+        function writeUserData(userId, nama, ucapan, date, newAvatar, order) {
+            if (ucapan == "" || nama == "") {
+                $("#alertTitle").html("Konfirmasi Ucapan")
+                $("#alert").html("Silahkan masukan nama & ucapan terlebih dahulu.")
+                $("#alertMsg").modal("show")
+                // alert("Silahkan masukan ucapan terlebih dahulu.")
+            } else {
+                db.ref('tamu/' + userId).set({
+                    nama: nama,
+                    tgl_kirim: date,
+                    ucapan: ucapan,
+                    order: parseInt(order),
+                    avatar: newAvatar
+                }, (error) => {
+                    if (error) {
+                        $("#alertTitle").html("Konfirmasi Ucapan")
+                        $("#alert").html("Ucapan anda gagal dikirim.")
+                        $("#alertMsg").modal("show")
+                    } else {
+                        $("#alertTitle").html("Konfirmasi Ucapan")
+                        $("#alert").html(nama + ", Ucapan anda berhasil dikirim. <br> Terima Kasih atas kunjungan anda.")
+                        $("#alertMsg").modal("show")
+                        $("#form-ucapan").hide()
+                    }
+                });
+            }
+        }
+
+
+        $("#btn-submit").click(function () {
+            let date = new Date();
+            let y = date.getFullYear();
+            let m = date.getMonth() + 1;
+            let d = date.getDate();
+            let h = date.getHours();
+            let min = date.getMinutes();
+            let s = date.getSeconds();
+            let newDate = d + "/" + m + "/" + y + " - " + h + ":" + min + ":" + s
+
+            let n = $('#namaTamu').val()
+            let u = $('#ucapan').val()
+            let id = $('#userId').val();
+            let order = $('#order').val();
+            let newAvatar = avatar()
+            writeUserData(id, n, u, newDate, newAvatar, order)
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $(".col").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>
